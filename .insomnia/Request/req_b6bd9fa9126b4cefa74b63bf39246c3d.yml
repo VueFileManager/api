@@ -1,0 +1,35 @@
+_id: req_b6bd9fa9126b4cefa74b63bf39246c3d
+type: Request
+parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
+modified: 1651481725344
+created: 1651481239937
+url: ""
+name: Update Sharing
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"protected": true,
+    	"password": "test",
+    	"permission": "editor",
+    	"expiration": 1,
+    	"_method": "patch"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a756789e96af4e94aca70b64f3c19526
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651478984944.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

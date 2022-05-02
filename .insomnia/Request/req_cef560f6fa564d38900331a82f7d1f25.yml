@@ -1,10 +1,10 @@
-_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+_id: req_cef560f6fa564d38900331a82f7d1f25
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651476642861
-created: 1651471388833
-url: "{{ _.base_url }}/api/user/transactions"
-name: Get Transactions (Pro)
+parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
+modified: 1651481755495
+created: 1651481730039
+url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/qr"
+name: Get QR Code
 description: ""
 method: GET
 body: {}
@@ -13,7 +13,7 @@ headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471388833
+metaSortKey: -1651478562852.25
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

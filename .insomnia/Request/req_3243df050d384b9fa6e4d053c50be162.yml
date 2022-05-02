@@ -1,0 +1,38 @@
+_id: req_3243df050d384b9fa6e4d053c50be162
+type: Request
+parentId: fld_52b1b32f8e344a73b4994051681dccdf
+modified: 1651502370951
+created: 1651501353496
+url: ""
+name: Create Team Folder
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Team API",
+    	"invitations": [
+    	{
+    		"email": "jane@doe.com",
+    		"permission": "can-edit",
+    		"type": "invitation"
+    	}
+    ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_42b9e6208d53410ab4cf6c1c965fc3a9
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651475173940.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

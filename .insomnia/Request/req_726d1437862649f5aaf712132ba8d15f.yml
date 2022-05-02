@@ -1,0 +1,37 @@
+_id: req_726d1437862649f5aaf712132ba8d15f
+type: Request
+parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
+modified: 1651479519296
+created: 1651479246959
+url: "{{ _.base_url }}/api/trash/restore"
+name: Restore item
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"to_home": true,
+    	"items": [
+    		{
+    			"type": "image",
+    			"id": "{file_id}"
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476324235.3125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

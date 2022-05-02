@@ -1,0 +1,30 @@
+_id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
+type: Request
+parentId: fld_115385e6318e41de9b67d278fa75bd44
+modified: 1651474801045
+created: 1651474743056
+url: "{{ _.base_url }}/api/password/email"
+name: Send recovery email
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_afd4270cddb542e0ae210f54e277e84e
+      name: email
+      value: ""
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_1db334ee29aa40fd847e556e77fdc1d7
+authentication: {}
+metaSortKey: -1651474743056
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

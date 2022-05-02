@@ -1,0 +1,42 @@
+_id: req_3235249673bd4e15a4ae0bd391c74370
+type: Request
+parentId: fld_115385e6318e41de9b67d278fa75bd44
+modified: 1651474874680
+created: 1651474857302
+url: "{{ _.base_url }}/api/password/reset"
+name: Reset Password
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_afd4270cddb542e0ae210f54e277e84e
+      name: email
+      value: ""
+      description: ""
+    - id: pair_c38e894441464226915393774d4a1ab2
+      name: token
+      value: ""
+      description: ""
+    - id: pair_8d68c1fa4ac141fda6de277d8b9af2c5
+      name: password
+      value: ""
+      description: ""
+    - id: pair_a5ae1a6062524809a39851bd2d22a6f4
+      name: password_confirmation
+      value: ""
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_1db334ee29aa40fd847e556e77fdc1d7
+authentication: {}
+metaSortKey: -1651474528314.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

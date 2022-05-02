@@ -1,0 +1,39 @@
+_id: req_c2ae8719c86f40a5a8e0c79e03af60d7
+type: Request
+parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
+modified: 1651481700471
+created: 1651479829129
+url: ""
+name: Share Item
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "5740b54b-55ca-406d-ab3a-cb0fd583a352",
+    	"isPassword": true,
+    	"password": "test",
+    	"type": "folder",
+    	"permission": "editor",
+    	"expiration": 1,
+    	"emails": [
+    		"jane@doe.com"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a756789e96af4e94aca70b64f3c19526
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651479829129
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

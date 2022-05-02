@@ -1,0 +1,40 @@
+_id: req_4186a20f9ad04da6a9046309b7c6c9c7
+type: Request
+parentId: fld_1252a88cf5964c4d92ef7db221c6be24
+modified: 1651481505445
+created: 1651477212728
+url: "{{ _.base_url }}/api/rename/{id}"
+name: Rename Item
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_645ecde3ddb34796870e60e6949bcd33
+      name: name
+      value: New name
+      description: ""
+    - id: pair_ad69b657c066468cb8f4505d7b5fbecf
+      name: type
+      value: image
+      description: ""
+    - id: pair_32099628b0414dd1a95e5be20591f65a
+      name: _method
+      value: patch
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476196079.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

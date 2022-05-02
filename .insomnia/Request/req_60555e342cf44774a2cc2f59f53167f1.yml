@@ -1,10 +1,10 @@
-_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+_id: req_60555e342cf44774a2cc2f59f53167f1
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651476642861
-created: 1651471388833
-url: "{{ _.base_url }}/api/user/transactions"
-name: Get Transactions (Pro)
+parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
+modified: 1651475936987
+created: 1651475920819
+url: "{{ _.base_url }}/api/browse/navigation"
+name: Get Navigation Tree
 description: ""
 method: GET
 body: {}
@@ -13,7 +13,7 @@ headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471388833
+metaSortKey: -1651474764711.1875
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

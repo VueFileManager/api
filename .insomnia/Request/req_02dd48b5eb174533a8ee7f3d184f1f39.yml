@@ -1,10 +1,10 @@
-_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+_id: req_02dd48b5eb174533a8ee7f3d184f1f39
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651476642861
-created: 1651471388833
-url: "{{ _.base_url }}/api/user/transactions"
-name: Get Transactions (Pro)
+parentId: fld_52b1b32f8e344a73b4994051681dccdf
+modified: 1651502938656
+created: 1651502858281
+url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
+name: Get Team Folder Invitation
 description: ""
 method: GET
 body: {}
@@ -12,8 +12,8 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: "{{ _.token }}"
-metaSortKey: -1651471388833
+  token: ""
+metaSortKey: -1651475427195.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

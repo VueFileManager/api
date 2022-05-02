@@ -1,0 +1,34 @@
+_id: req_77254d006667445bbb05fbf6b107418c
+type: Request
+parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
+modified: 1651481701815
+created: 1651481099717
+url: "{{ _.base_url }}/api/share/revoke"
+name: Cancel Sharing
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"_method": "delete",
+    	"tokens": [
+    		"rsfLpa81hVCcXwv5"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a756789e96af4e94aca70b64f3c19526
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651478140760
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

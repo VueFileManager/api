@@ -1,0 +1,32 @@
+_id: req_2dae18535bce44eebb0bc6ea1593657f
+type: Request
+parentId: fld_1252a88cf5964c4d92ef7db221c6be24
+modified: 1651481504032
+created: 1651476452391
+url: ""
+name: Create Folder
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_645ecde3ddb34796870e60e6949bcd33
+      name: name
+      value: New Folder
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476452391
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

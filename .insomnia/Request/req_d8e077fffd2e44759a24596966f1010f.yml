@@ -1,19 +1,19 @@
-_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+_id: req_d8e077fffd2e44759a24596966f1010f
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651476642861
-created: 1651471388833
-url: "{{ _.base_url }}/api/user/transactions"
-name: Get Transactions (Pro)
+parentId: fld_52b1b32f8e344a73b4994051681dccdf
+modified: 1651502261258
+created: 1651501803661
+url: ""
+name: Dissolve Team
 description: ""
-method: GET
+method: DELETE
 body: {}
 parameters: []
 headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471388833
+metaSortKey: -1651475131739.8125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

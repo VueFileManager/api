@@ -1,19 +1,19 @@
-_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+_id: req_54adcf16f2da4c90a49cadde3b735156
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651476642861
-created: 1651471388833
-url: "{{ _.base_url }}/api/user/transactions"
-name: Get Transactions (Pro)
+parentId: fld_52b1b32f8e344a73b4994051681dccdf
+modified: 1651502305502
+created: 1651502268959
+url: "{{ _.base_url }}/api/teams/folders/f2579422-8204-4b0f-812f-59f051f0a43a/leave"
+name: Leave Team Folder
 description: ""
-method: GET
+method: DELETE
 body: {}
 parameters: []
 headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471388833
+metaSortKey: -1651475110639.4062
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

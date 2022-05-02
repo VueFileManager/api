@@ -1,0 +1,33 @@
+_id: req_2934678c65e84a4682253ade882f1c8c
+type: Request
+parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
+modified: 1651481861492
+created: 1651481790564
+url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/email"
+name: Send Link on Email
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"emails": [
+    		"jane@doe.com"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2430fa999c404d9ea1074815879acff3
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651478351806.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
