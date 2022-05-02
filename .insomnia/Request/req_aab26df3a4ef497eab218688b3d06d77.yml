@@ -1,0 +1,40 @@
+_id: req_aab26df3a4ef497eab218688b3d06d77
+type: Request
+parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
+modified: 1651473371366
+created: 1651471561821
+url: "{{ _.base_url }}/api/user/password"
+name: Update Password
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_0fa36f64e1d7451680c077c1164168fe
+      name: current
+      value: vuefilemanager
+      description: ""
+    - id: pair_d486f1994c5f4df4b1d453fd8cf1dad4
+      name: password
+      value: vuefilemanager
+      description: ""
+    - id: pair_c58e49c030c04f0fb2a509321b7976d2
+      name: password_confirmation
+      value: vuefilemanager
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_1563fb04fc014193a0911fa9c8fd8f8a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651471561821
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

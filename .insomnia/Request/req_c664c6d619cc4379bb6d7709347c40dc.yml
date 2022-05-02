@@ -1,0 +1,42 @@
+_id: req_c664c6d619cc4379bb6d7709347c40dc
+type: Request
+parentId: fld_c310ad61fb5c426b87f90fabbf9cd35f
+modified: 1651474376362
+created: 1651474313573
+url: "{{ _.base_url }}/api/register"
+name: Registration
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_f4e2fb6a39fe4952897dd6e3c8b547b8
+      name: name
+      value: Jane Doe
+      description: ""
+    - id: pair_7b6e5d79fa1c45669aa89b08be681dff
+      name: email
+      value: jane@doe.com
+      description: ""
+    - id: pair_f7e911ed85aa422eb3de4a5cd676fa55
+      name: password
+      value: vuefilemanager
+      description: ""
+    - id: pair_112e17c1610647c8a1e8fd66111934c3
+      name: password_confirmation
+      value: vuefilemanager
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_3f5de3fa413d4708aa2f21e3b08656d5
+authentication: {}
+metaSortKey: -1651474313573
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

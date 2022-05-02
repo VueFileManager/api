@@ -1,0 +1,32 @@
+_id: req_8b041d2076234deabde75c7c55ff3c82
+type: Request
+parentId: fld_88dadd6ada9f4132884e63a37590b711
+modified: 1651473360332
+created: 1651473040417
+url: "{{ _.base_url }}/api/user/tokens"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_03e8827b2b174d2db78e89b6b1ef5f57
+      name: name
+      value: My Custom App
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_20a0fcbde96349cdbf3d0414d88bf84b
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651473040417
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

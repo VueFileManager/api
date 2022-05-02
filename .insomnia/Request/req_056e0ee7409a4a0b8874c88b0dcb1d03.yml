@@ -1,0 +1,23 @@
+_id: req_056e0ee7409a4a0b8874c88b0dcb1d03
+type: Request
+parentId: fld_af48ace5c9014c87945e6550bacf5697
+modified: 1651473365827
+created: 1651470986498
+url: "{{ _.base_url }}/api/user/notifications"
+name: Delete All
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651470828897
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

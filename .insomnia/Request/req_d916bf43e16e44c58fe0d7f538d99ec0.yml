@@ -1,0 +1,23 @@
+_id: req_d916bf43e16e44c58fe0d7f538d99ec0
+type: Request
+parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
+modified: 1651473374216
+created: 1651471388833
+url: "{{ _.base_url }}/api/user/transactions"
+name: Get Transactions
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651471388833
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

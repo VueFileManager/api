@@ -1,0 +1,44 @@
+_id: req_344b0919921740d4827db2ab84ee61bd
+type: Request
+parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
+modified: 1651473369287
+created: 1651472183034
+url: "{{ _.base_url }}/api/user/settings"
+name: Update Avatar
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_fcb059a2fa1844789d9499308f5923bb
+      name: name
+      value: avatar
+      description: ""
+    - id: pair_1de2e112875448e9b0a076b79aaad05b
+      name: avatar
+      value: Jane
+      description: ""
+      type: file
+      multiline: null
+      fileName: /Users/carodej/Desktop/VueFileManager/Avatars/avatar-01.png
+    - id: pair_da99352e2c474768b07c1539fafd3642
+      name: _method
+      value: patch
+      description: ""
+      disabled: false
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_39dca7b848e84a2b8753c1e31a9a2c28
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651471663578
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

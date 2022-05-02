@@ -1,0 +1,30 @@
+_id: req_fde427d445624f028a0ff09973b719ad
+type: Request
+parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
+modified: 1651473604623
+created: 1651473576700
+url: "{{ _.base_url }}/api/user/email/verify/resend"
+name: Resend Verification Email
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_b3bfc18f15bb427eadb80bc9c79862da
+      name: email
+      value: howdy@hi5ve.digital
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_f9427c86dd77475594427b12a3779900
+authentication: {}
+metaSortKey: -1651473576700
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
