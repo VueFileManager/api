@@ -1,15 +1,19 @@
 _id: req_d370f79e252c4ff595938926d5848f16
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1651476231768
+modified: 1651587006022
 created: 1651476144058
-url: "{{ _.base_url }}/api/browse/search?filter=users&query=howdy@hi5ve.digital"
+url: "{{ _.base_url }}/api/search?filter=users&query=howdy@hi5ve.digital"
 name: Search Users
 description: ""
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_877e0d56c575483b8bf0f0f9a4cda628
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

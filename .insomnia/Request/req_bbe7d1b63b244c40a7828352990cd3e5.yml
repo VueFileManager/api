@@ -1,15 +1,19 @@
 _id: req_bbe7d1b63b244c40a7828352990cd3e5
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1651476232654
+modified: 1651587017292
 created: 1651476207238
-url: "{{ _.base_url }}/api/browse/search?query=documents"
+url: "{{ _.base_url }}/api/search?query=documents"
 name: Search Files & Folders
 description: ""
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_22907bacf0694790bd396c76e189a3e5
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

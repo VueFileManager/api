@@ -1,7 +1,7 @@
 _id: req_8b041d2076234deabde75c7c55ff3c82
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1651473360332
+modified: 1651645802517
 created: 1651473040417
 url: "{{ _.base_url }}/api/user/tokens"
 name: Create
@@ -14,11 +14,16 @@ body:
       name: name
       value: My Custom App
       description: ""
+      disabled: false
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_20a0fcbde96349cdbf3d0414d88bf84b
+  - id: pair_4c51c46f56b540e988e30530d60fbefe
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

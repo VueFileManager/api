@@ -1,7 +1,7 @@
 _id: req_afdddea447f4497093b6818c273c4d3f
 type: Request
 parentId: fld_27bd064f8f7d4e11a5cfda32d931f502
-modified: 1651474095476
+modified: 1651640070025
 created: 1651473972850
 url: "{{ _.base_url }}/api/user/check"
 name: Check Account By Email
@@ -12,13 +12,18 @@ body:
   params:
     - id: pair_b1721b53a2db4f1c81e4079c09176dbd
       name: email
-      value: howdy@hi5ve.digital
+      value: howdy@hi5ve.digitals
       description: ""
+      disabled: false
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_173b9edb9931419c8517da7ba3f1fae7
+  - id: pair_a771b8bea01545e4aababd53ad8c0708
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651473972850
 isPrivate: false

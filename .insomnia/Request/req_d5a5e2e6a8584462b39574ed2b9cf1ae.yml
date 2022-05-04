@@ -1,7 +1,7 @@
 _id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1651474801045
+modified: 1651639380050
 created: 1651474743056
 url: "{{ _.base_url }}/api/password/email"
 name: Send recovery email
@@ -12,13 +12,17 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: ""
+      value: howdy@hi5ve.digital
       description: ""
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_1db334ee29aa40fd847e556e77fdc1d7
+  - id: pair_b8e3f01475e8405786c66583b668a0f0
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651474743056
 isPrivate: false

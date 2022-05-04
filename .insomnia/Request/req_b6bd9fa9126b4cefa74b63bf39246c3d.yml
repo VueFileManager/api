@@ -1,9 +1,9 @@
 _id: req_b6bd9fa9126b4cefa74b63bf39246c3d
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651481725344
+modified: 1651585248708
 created: 1651481239937
-url: ""
+url: "{{ _.base_url }}/api/share/vuEakfxlfrs7D5mq"
 name: Update Sharing
 description: ""
 method: POST
@@ -22,6 +22,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_a756789e96af4e94aca70b64f3c19526
+  - id: pair_96678c15640c47ce8190957a01ccfe31
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

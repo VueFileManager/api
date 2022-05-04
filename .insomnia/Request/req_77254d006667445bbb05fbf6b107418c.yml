@@ -1,19 +1,18 @@
 _id: req_77254d006667445bbb05fbf6b107418c
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651481701815
+modified: 1651585999531
 created: 1651481099717
 url: "{{ _.base_url }}/api/share/revoke"
 name: Cancel Sharing
 description: ""
-method: POST
+method: DELETE
 body:
   mimeType: application/json
   text: |-
     {
-    	"_method": "delete",
     	"tokens": [
-    		"rsfLpa81hVCcXwv5"
+    		"vuEakfxlfrs7D5mq"
     	]
     }
 parameters: []
@@ -21,6 +20,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_a756789e96af4e94aca70b64f3c19526
+  - id: pair_8e57bd66b537401a85a4483117009af5
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

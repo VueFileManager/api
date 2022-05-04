@@ -1,7 +1,7 @@
 _id: req_b3a0bfbb573b48db995b03c51525eb90
 type: Request
 parentId: fld_1be81e5c8e4d417d894db8f455ddc734
-modified: 1651477104222
+modified: 1651557308533
 created: 1651476781341
 url: "{{ _.base_url }}/api/upload/remote"
 name: Remote Upload
@@ -21,6 +21,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_88c6772de32449a1bdd39b288e7df0da
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

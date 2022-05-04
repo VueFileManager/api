@@ -1,7 +1,7 @@
 _id: req_2f6c112fd5be43568df1515022e377c5
 type: Request
 parentId: fld_6ff0ba7c9c674ed3a5cc3a201136a471
-modified: 1651482186629
+modified: 1651556891515
 created: 1651482088572
 url: "{{ _.base_url }}/api/folders/favourites"
 name: Add to Favourites
@@ -11,10 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"folders": [
-    		{
-    			"id": "dae39525-b7ed-4e02-aacf-54ebe701ca79"
-    		}
+    	"ids": [
+    		"dae39525-b7ed-4e02-aacf-54ebe701ca79"
     	]
     }
 parameters: []
@@ -22,6 +20,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_242dbe4a141045e6bf8364ef70113cc6
+  - id: pair_f1c29d9e76be43ed843a5eff1f2035c1
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

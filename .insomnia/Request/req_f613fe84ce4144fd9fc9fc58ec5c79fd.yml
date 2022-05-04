@@ -1,9 +1,9 @@
 _id: req_f613fe84ce4144fd9fc9fc58ec5c79fd
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1651475914699
+modified: 1651587133628
 created: 1651475089539
-url: ""
+url: "{{ _.base_url }}/api/browse/folders/all"
 name: Get My Files
 description: ""
 method: GET

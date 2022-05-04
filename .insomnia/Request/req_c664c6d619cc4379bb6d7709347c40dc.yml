@@ -1,7 +1,7 @@
 _id: req_c664c6d619cc4379bb6d7709347c40dc
 type: Request
 parentId: fld_c310ad61fb5c426b87f90fabbf9cd35f
-modified: 1651476679650
+modified: 1651646393889
 created: 1651474313573
 url: "{{ _.base_url }}/api/register"
 name: Registration
@@ -14,14 +14,17 @@ body:
       name: name
       value: Jane Doe
       description: ""
+      disabled: false
     - id: pair_7b6e5d79fa1c45669aa89b08be681dff
       name: email
       value: jane@doe.com
       description: ""
+      disabled: false
     - id: pair_f7e911ed85aa422eb3de4a5cd676fa55
       name: password
       value: vuefilemanager
       description: ""
+      disabled: false
     - id: pair_112e17c1610647c8a1e8fd66111934c3
       name: password_confirmation
       value: vuefilemanager
@@ -31,6 +34,10 @@ headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_3f5de3fa413d4708aa2f21e3b08656d5
+  - id: pair_69449f199f1648279540588015e60d5d
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651474313573
 isPrivate: false

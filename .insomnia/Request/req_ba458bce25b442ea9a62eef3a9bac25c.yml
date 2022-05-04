@@ -1,15 +1,19 @@
 _id: req_ba458bce25b442ea9a62eef3a9bac25c
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1651473352669
+modified: 1651646122493
 created: 1651473153213
-url: "{{ _.base_url }}/api/user/tokens/123"
+url: "{{ _.base_url }}/api/user/tokens/4"
 name: Delete
 description: ""
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_f3a468cf8c44467f805ea988d24d8c61
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

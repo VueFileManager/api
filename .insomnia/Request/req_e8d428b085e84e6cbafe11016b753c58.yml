@@ -1,7 +1,7 @@
 _id: req_e8d428b085e84e6cbafe11016b753c58
 type: Request
 parentId: fld_6ff0ba7c9c674ed3a5cc3a201136a471
-modified: 1651482251584
+modified: 1651556887667
 created: 1651482234282
 url: "{{ _.base_url }}/api/folders/favourites/dae39525-b7ed-4e02-aacf-54ebe701ca79"
 name: Remove from Favourites
@@ -9,7 +9,11 @@ description: ""
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_86d40da586414db4b921db28c8812af7
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

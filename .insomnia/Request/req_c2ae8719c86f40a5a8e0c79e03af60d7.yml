@@ -1,9 +1,9 @@
 _id: req_c2ae8719c86f40a5a8e0c79e03af60d7
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651481700471
+modified: 1651584591422
 created: 1651479829129
-url: ""
+url: "{{ _.base_url }}/api/share/dae39525-b7ed-4e02-aacf-54ebe701ca79"
 name: Share Item
 description: ""
 method: POST
@@ -11,9 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"id": "5740b54b-55ca-406d-ab3a-cb0fd583a352",
     	"isPassword": true,
-    	"password": "test",
+    	"password": "secret_password",
     	"type": "folder",
     	"permission": "editor",
     	"expiration": 1,
@@ -26,6 +25,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_a756789e96af4e94aca70b64f3c19526
+  - id: pair_afaea21cec95495f86c0f5eb1e29b271
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

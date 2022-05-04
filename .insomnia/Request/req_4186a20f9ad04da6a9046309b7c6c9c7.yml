@@ -1,9 +1,9 @@
 _id: req_4186a20f9ad04da6a9046309b7c6c9c7
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651481505445
+modified: 1651586427863
 created: 1651477212728
-url: "{{ _.base_url }}/api/rename/{id}"
+url: "{{ _.base_url }}/api/rename/0f04e8ba-7c05-4df5-b4f8-12428e591cb8"
 name: Rename Item
 description: ""
 method: POST
@@ -14,19 +14,26 @@ body:
       name: name
       value: New name
       description: ""
+      disabled: false
     - id: pair_ad69b657c066468cb8f4505d7b5fbecf
       name: type
-      value: image
+      value: folder
       description: ""
+      disabled: false
     - id: pair_32099628b0414dd1a95e5be20591f65a
       name: _method
       value: patch
       description: ""
+      disabled: false
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_3d6221a8cb8545d7b396a4eca9b7c256
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

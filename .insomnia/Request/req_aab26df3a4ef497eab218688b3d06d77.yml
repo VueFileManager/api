@@ -1,7 +1,7 @@
 _id: req_aab26df3a4ef497eab218688b3d06d77
 type: Request
 parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651473371366
+modified: 1651641820281
 created: 1651471561821
 url: "{{ _.base_url }}/api/user/password"
 name: Update Password
@@ -27,6 +27,10 @@ headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_1563fb04fc014193a0911fa9c8fd8f8a
+  - id: pair_dfccae8e4561444f9d5fcbe688864ecb
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

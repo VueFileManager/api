@@ -1,7 +1,7 @@
 _id: req_352adebdb3d949eea12d56309dcdc934
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651479299129
+modified: 1651562345102
 created: 1651478726635
 url: "{{ _.base_url }}/api/move"
 name: Move Item
@@ -24,6 +24,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_f770877e639a458383c7f900cb19a85e
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

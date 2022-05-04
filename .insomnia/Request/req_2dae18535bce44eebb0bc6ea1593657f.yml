@@ -1,9 +1,9 @@
 _id: req_2dae18535bce44eebb0bc6ea1593657f
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651481504032
+modified: 1651645995239
 created: 1651476452391
-url: ""
+url: "{{ _.base_url }}/api/create-folder"
 name: Create Folder
 description: ""
 method: POST
@@ -14,11 +14,21 @@ body:
       name: name
       value: New Folder
       description: ""
+      disabled: false
+    - id: pair_ab0c6223428240eaab48a0384a15acf0
+      name: parent_id
+      value: ""
+      description: ""
+      disabled: false
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_a2b499b88681458ca3b6789c31c7b485
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

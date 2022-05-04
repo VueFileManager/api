@@ -1,7 +1,7 @@
 _id: req_726d1437862649f5aaf712132ba8d15f
 type: Request
 parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
-modified: 1651479519296
+modified: 1651556882757
 created: 1651479246959
 url: "{{ _.base_url }}/api/trash/restore"
 name: Restore item
@@ -14,8 +14,8 @@ body:
     	"to_home": true,
     	"items": [
     		{
-    			"type": "image",
-    			"id": "{file_id}"
+    			"type": "folder",
+    			"id": "{item_id}"
     		}
     	]
     }
@@ -24,6 +24,10 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_1a2abcac9a164c64bd6e5368c5161a0c
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

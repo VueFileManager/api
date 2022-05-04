@@ -1,11 +1,11 @@
 _id: req_3243df050d384b9fa6e4d053c50be162
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651502370951
+modified: 1651649211939
 created: 1651501353496
-url: ""
+url: "{{ _.base_url }}/api/teams/folders"
 name: Create Team Folder
-description: ""
+description: It create new team folder
 method: POST
 body:
   mimeType: application/json
@@ -13,22 +13,26 @@ body:
     {
     	"name": "Team API",
     	"invitations": [
-    	{
-    		"email": "jane@doe.com",
-    		"permission": "can-edit",
-    		"type": "invitation"
-    	}
-    ]
+    		{
+    			"email": "jane@doe.com",
+    			"permission": "can-edit",
+    			"type": "invitation"
+    		}
+    	]
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_42b9e6208d53410ab4cf6c1c965fc3a9
+  - id: pair_a436b987440747fa9e1163df0ff0ffd9
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651475173940.625
+metaSortKey: -1651475427245.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

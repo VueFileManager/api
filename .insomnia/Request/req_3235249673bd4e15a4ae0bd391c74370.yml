@@ -1,7 +1,7 @@
 _id: req_3235249673bd4e15a4ae0bd391c74370
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1651474874680
+modified: 1651639502546
 created: 1651474857302
 url: "{{ _.base_url }}/api/password/reset"
 name: Reset Password
@@ -12,25 +12,29 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: ""
+      value: howdy@hi5ve.digital
       description: ""
     - id: pair_c38e894441464226915393774d4a1ab2
       name: token
-      value: ""
+      value: 3D2182a361f3b4b43467197d167bede5072df496b8647f483fdf1ed19549beb116
       description: ""
     - id: pair_8d68c1fa4ac141fda6de277d8b9af2c5
       name: password
-      value: ""
+      value: vuefilemanager
       description: ""
     - id: pair_a5ae1a6062524809a39851bd2d22a6f4
       name: password_confirmation
-      value: ""
+      value: vuefilemanager
       description: ""
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_1db334ee29aa40fd847e556e77fdc1d7
+  - id: pair_12a145f8e2104d8db0c85319862c8909
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651474528314.5
 isPrivate: false

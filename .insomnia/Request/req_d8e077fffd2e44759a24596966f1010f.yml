@@ -1,9 +1,9 @@
 _id: req_d8e077fffd2e44759a24596966f1010f
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651502261258
+modified: 1651651875466
 created: 1651501803661
-url: ""
+url: "{{ _.base_url }}/api/teams/folders/7844870e-c1f4-45e9-9def-eddf640714a3"
 name: Dissolve Team
 description: ""
 method: DELETE
