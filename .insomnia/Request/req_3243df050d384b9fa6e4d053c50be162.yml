@@ -1,11 +1,32 @@
 _id: req_3243df050d384b9fa6e4d053c50be162
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651649211939
+modified: 1651673149672
 created: 1651501353496
 url: "{{ _.base_url }}/api/teams/folders"
 name: Create Team Folder
-description: It create new team folder
+description: |-
+  It create new team folder and invite new members into it.
+  ```
+  POST /api/teams/folders
+  ```
+
+  # Payload
+
+  ## name `string` `required`
+  The name of the team folder.
+
+  ## invitations `array` `required`
+  The array of invitations which specify who invite to the team folder.
+
+  ## invitations.*.email `string` `required`
+  The email address of the user
+
+  ## invitations.*.permission `string` `required`
+  The permission for the user. Can be `can-edit` or `can-view`
+
+  ## invitations.*.type `string` `required`
+  The type of the object, `invitation` value is required
 method: POST
 body:
   mimeType: application/json

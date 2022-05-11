@@ -1,11 +1,29 @@
 _id: req_3235249673bd4e15a4ae0bd391c74370
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1651639502546
+modified: 1651671387918
 created: 1651474857302
 url: "{{ _.base_url }}/api/password/reset"
 name: Reset Password
-description: ""
+description: |
+  Update user avatar
+  ```
+  POST /api/password/reset
+  ```
+
+  # Payload
+
+  ## email `string` `required`
+  The user email for which password recovery link was generated.
+
+  ## token `string` `required`
+  The password reset token received in the url string.
+
+  ## password `string` `required`
+  The new user password.
+
+  ## password_confirmation `string` `required`
+  The new user password confirmation.
 method: POST
 body:
   mimeType: multipart/form-data

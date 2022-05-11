@@ -1,11 +1,41 @@
 _id: req_352adebdb3d949eea12d56309dcdc934
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651562345102
+modified: 1652246789250
 created: 1651478726635
 url: "{{ _.base_url }}/api/move"
 name: Move Item
-description: ""
+description: >-
+  Move one or many items elsewhere
+
+  ```
+
+  POST /api/remove
+
+  ```
+
+
+  # Payload
+
+
+  ## items `array` `required`
+
+  The name of the new folder
+
+
+  ## items.*.force_delete `boolean` `required`
+
+  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be softly deleted. 
+
+
+  ## items.*.type `string` `required`
+
+  The type of the deleting item. Allowed types are `folder` or `file`.
+
+
+  ## items.*.id `uuid` `required`
+
+  The ID of the item.
 method: POST
 body:
   mimeType: application/json

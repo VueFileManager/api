@@ -1,11 +1,19 @@
 _id: req_8b041d2076234deabde75c7c55ff3c82
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1651645802517
+modified: 1651671532923
 created: 1651473040417
 url: "{{ _.base_url }}/api/user/tokens"
 name: Create
-description: ""
+description: |-
+  Generate new authentication token.
+  ```
+  POST /api/user/tokens
+  ```
+  # Payload
+
+  ## name `string` `required`
+  The name of the token.
 method: POST
 body:
   mimeType: multipart/form-data

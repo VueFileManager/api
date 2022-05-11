@@ -1,11 +1,19 @@
 _id: req_e8493b9d551a40f8ada737c32ab5d345
 type: Request
-parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1651587194311
+parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
+modified: 1652246782632
 created: 1651475643480
 url: "{{ _.base_url }}/api/browse/trash/all"
-name: Get Trash
-description: ""
+name: Get Content
+description: |-
+  Get all trash content
+  ```
+  GET /api/browse/trash/all
+  ```
+  Get content of single deleted folder
+  ```
+  GET /api/browse/trash/{folder_id}
+  ```
 method: GET
 body: {}
 parameters: []
@@ -13,7 +21,7 @@ headers: []
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651474786366.375
+metaSortKey: -1651476324285.3125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

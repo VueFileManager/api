@@ -1,11 +1,39 @@
 _id: req_c2002790ba6145dcb9d91d8b58a41657
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651562345773
+modified: 1652246792284
 created: 1651478950578
 url: "{{ _.base_url }}/api/zip?items={item_id}|file,{item_id}|folder"
 name: ZIP & Download Items
-description: ""
+description: >
+  Zip single or multiple files or folders and download them
+
+  ```
+
+  GET /api/zip?items={item_id}|{type},{item_id}|{type}
+
+  ```
+
+  Example of request 
+
+  ```
+
+  GET /api/zip?items=03a76121-369e-4473-9baf-1e4225823ed1|folder,0a1122fa-cba2-45dc-9b8d-7d5b5feaab57|file
+
+  ```
+
+
+  # Arguments
+
+
+  ## item_id `uuid` `required`
+
+  Your search query to find files or folders
+
+
+  ## type `string` `required`
+
+  The type of the requested item. Allowed types are `folder` or `file`.
 method: GET
 body: {}
 parameters: []

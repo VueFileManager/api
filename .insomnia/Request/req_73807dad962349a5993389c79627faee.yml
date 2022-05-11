@@ -1,11 +1,55 @@
 _id: req_73807dad962349a5993389c79627faee
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651651791414
+modified: 1651657126886
 created: 1651501953360
 url: "{{ _.base_url }}/api/teams/folders/e02b38c9-8806-4907-b793-20331e5b4dd3"
 name: Update Team Folder
-description: ""
+description: >-
+  It update team folder members or invite new members into it.
+
+  ```
+
+  PATCH /api/teams/folders/{folder_id}
+
+  ```
+
+
+  # Payload
+
+
+  ## invitations `array` `required`
+
+  The array of actual invitations. If you'd like to invite new member, include it in invitations array. If you'd like to remove invitation, just void the member in invitations array. The backend synchronize the list.
+   
+  ## invitations.*.email `string` `required`
+
+  The email address of the user
+
+
+  ## invitations.*.permission `string` `required`
+
+  The permission for the user. Can be `can-edit` or `can-view`
+
+
+  ## invitations.*.type `string` `required`
+
+  The type of the object, `invitation` value is required
+
+
+  ## members `array` `required`
+
+  The array of actual members. If you void some actual member in the list, the member will be detached from the members of the team folder. The backend synchronize the list.
+
+
+  ## members.*.id `uuid` `required`
+
+  The email address of the user
+
+
+  ## members.*.permission `string` `required`
+
+  The permission for the user. Can be `can-edit` or `can-view`
 method: PATCH
 body:
   mimeType: application/json

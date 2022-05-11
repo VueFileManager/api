@@ -1,11 +1,20 @@
 _id: req_e8d428b085e84e6cbafe11016b753c58
 type: Request
 parentId: fld_6ff0ba7c9c674ed3a5cc3a201136a471
-modified: 1651556887667
+modified: 1652246772851
 created: 1651482234282
 url: "{{ _.base_url }}/api/folders/favourites/dae39525-b7ed-4e02-aacf-54ebe701ca79"
 name: Remove from Favourites
-description: ""
+description: |-
+  Remove folder from favourites list
+  ```
+  POST /api/folders/favourites/{folder_id}
+  ```
+
+  # Arguments
+
+  ## folder_id `uuid` `required`
+  The uuid of the folder to remove from favourites list
 method: DELETE
 body: {}
 parameters: []

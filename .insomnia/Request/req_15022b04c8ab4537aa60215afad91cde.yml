@@ -1,12 +1,31 @@
 _id: req_15022b04c8ab4537aa60215afad91cde
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651649440834
+modified: 1651657134182
 created: 1651502385431
 url: "{{ _.base_url
   }}/api/teams/folders/a42609e3-6f78-4bc8-9ef2-436d36e3937c/convert"
 name: Convert Into Team Folder
-description: ""
+description: |-
+  It convert existing private folder and invite new members into it.
+
+  ```
+  POST /api/teams/folders/{folder_id}/convert
+  ```
+
+  # Payload
+
+  ## invitations `array` `required`
+  The array of invitations which specify who invite to the team folder.
+
+  ## invitations.*.email `string` `required`
+  The email address of the user
+
+  ## invitations.*.permission `string` `required`
+  The permission for the user. Can be `can-edit` or `can-view`
+
+  ## invitations.*.type `string` `required`
+  The type of the object, `invitation` value is required
 method: POST
 body:
   mimeType: application/json

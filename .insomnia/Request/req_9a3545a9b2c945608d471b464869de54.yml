@@ -1,11 +1,15 @@
 _id: req_9a3545a9b2c945608d471b464869de54
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1651645612028
+modified: 1651671531555
 created: 1651473325729
 url: "{{ _.base_url }}/api/user/tokens"
 name: Get All
-description: ""
+description: |-
+  Get all users generated authentication tokens.
+  ```
+  GET /api/user/tokens
+  ```
 method: GET
 body: {}
 parameters: []

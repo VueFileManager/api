@@ -1,11 +1,35 @@
 _id: req_a19dba17fb534f24bb304790b7040126
 type: Request
 parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651641477070
+modified: 1651671520724
 created: 1651471765335
 url: "{{ _.base_url }}/api/user/settings"
 name: Update Setting
-description: ""
+description: |
+  Update user settings
+  ```
+  POST /api/user/settings
+  ```
+
+  # Payload
+
+  ## name `string` `required`
+  Name of the attribude you are going to update. Allowed attributes are:
+  - color (HEX format)
+  - first_name
+  - last_name
+  - address
+  - state
+  - city
+  - postal_code
+  - country (ISO 3166-1 alpha-2 format)
+  - phone_number
+  - timezone (1.0, 2.0, 3.0...)
+  - emoji_type (twemoji|system)
+  - theme_mode (light|dark|system)
+
+  ## value `string|integer` `required`
+  The string or integer value
 method: POST
 body:
   mimeType: multipart/form-data

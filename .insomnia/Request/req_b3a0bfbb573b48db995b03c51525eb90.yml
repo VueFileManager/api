@@ -1,11 +1,20 @@
 _id: req_b3a0bfbb573b48db995b03c51525eb90
 type: Request
 parentId: fld_1be81e5c8e4d417d894db8f455ddc734
-modified: 1651557308533
+modified: 1652247018997
 created: 1651476781341
 url: "{{ _.base_url }}/api/upload/remote"
 name: Remote Upload
-description: ""
+description: |-
+  Upload remotely files from URL
+  ```
+  POST /api/upload/remote
+  ```
+
+  # Payload
+
+  ## urls `array` `required`
+  The array of valid file urls to download remotely
 method: POST
 body:
   mimeType: application/json

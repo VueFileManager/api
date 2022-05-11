@@ -1,11 +1,15 @@
 _id: req_8119e12df58b47d1ac65f46c1ccd7836
 type: Request
 parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651641833529
+modified: 1651671527025
 created: 1651471472424
 url: "{{ _.base_url }}/api/user/storage"
 name: Get Storage Detail
-description: ""
+description: |-
+  Get user storage details
+  ```
+  GET /api/user/storage
+  ```
 method: GET
 body: {}
 parameters: []

@@ -1,11 +1,20 @@
 _id: req_bbe7d1b63b244c40a7828352990cd3e5
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1651587017292
+modified: 1651675525340
 created: 1651476207238
 url: "{{ _.base_url }}/api/search?query=documents"
 name: Search Files & Folders
-description: ""
+description: |
+  Search files & folders
+  ```
+  GET /api/search?query={keyword}
+  ```
+
+  # Arguments
+
+  ## query `string` `required`
+  Your search query to find files or folders
 method: GET
 body: {}
 parameters: []

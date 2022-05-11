@@ -1,11 +1,29 @@
 _id: req_726d1437862649f5aaf712132ba8d15f
 type: Request
 parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
-modified: 1651556882757
+modified: 1652246780804
 created: 1651479246959
 url: "{{ _.base_url }}/api/trash/restore"
 name: Restore item
-description: ""
+description: |-
+  Restore one or many items from the trash
+  ```
+  POST /api/trash/restore
+  ```
+
+  # Payload
+
+  ## to_home `boolean` `required`
+  If value is true, then move restored content to the home.
+
+  ## items `array` `required`
+  The array of items which has to be restored.
+
+  ## items.*.type `string` `required`
+  The type of the restoring item. Allowed types are `folder` or `file`
+
+  ## items.*.id `uuid` `required`
+  The id of the restoring item
 method: POST
 body:
   mimeType: application/json

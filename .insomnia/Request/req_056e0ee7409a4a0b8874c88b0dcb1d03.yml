@@ -1,11 +1,15 @@
 _id: req_056e0ee7409a4a0b8874c88b0dcb1d03
 type: Request
 parentId: fld_af48ace5c9014c87945e6550bacf5697
-modified: 1651648035412
+modified: 1651657116850
 created: 1651470986498
 url: "{{ _.base_url }}/api/user/notifications"
 name: Delete All
-description: ""
+description: |-
+  It delete all available user notifications.
+  ```
+  DELETE /api/user/notifications
+  ```
 method: DELETE
 body: {}
 parameters: []

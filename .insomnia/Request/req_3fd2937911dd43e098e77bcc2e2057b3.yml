@@ -1,11 +1,16 @@
 _id: req_3fd2937911dd43e098e77bcc2e2057b3
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1651503064980
+modified: 1651655531517
 created: 1651502985860
 url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
 name: Accept Team Folder Invitation
-description: ""
+description: |-
+  Accept team folder invitation.
+
+  ```
+  PATCH /api/teams/invitations/{invitation_id}
+  ```
 method: PATCH
 body: {}
 parameters: []

@@ -1,11 +1,15 @@
 _id: req_3ae3b67cb5e84e8ca7fbe494ced1c22d
 type: Request
 parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651645602246
+modified: 1651671529399
 created: 1651468441519
 url: "{{ _.base_url }}/api/user"
 name: Get Profile
-description: ""
+description: |-
+  Get user details.
+  ```
+  GET /api/user
+  ```
 method: GET
 body: {}
 parameters: []

@@ -1,11 +1,23 @@
 _id: req_4186a20f9ad04da6a9046309b7c6c9c7
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1651586427863
+modified: 1652246787336
 created: 1651477212728
 url: "{{ _.base_url }}/api/rename/0f04e8ba-7c05-4df5-b4f8-12428e591cb8"
 name: Rename Item
-description: ""
+description: |-
+  Create new folder for the private files
+  ```
+  POST /api/rename/{item_id}
+  ```
+
+  # Payload
+
+  ## name `string` `required`
+  The new item name
+
+  ## type `string` `required`
+  The type of the renaming item. Allowed types are `folder` or `file`
 method: POST
 body:
   mimeType: multipart/form-data

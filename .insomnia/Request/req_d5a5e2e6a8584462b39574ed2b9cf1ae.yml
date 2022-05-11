@@ -1,11 +1,20 @@
 _id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1651639380050
+modified: 1651671194229
 created: 1651474743056
 url: "{{ _.base_url }}/api/password/email"
 name: Send recovery email
-description: ""
+description: |
+  Send email to recover password 
+  ```
+  POST /api/password/email
+  ```
+
+  # Payload
+
+  ## email `string` `required`
+  The email where to send recovery link
 method: POST
 body:
   mimeType: multipart/form-data

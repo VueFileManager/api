@@ -1,11 +1,15 @@
 _id: req_60555e342cf44774a2cc2f59f53167f1
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1651639327058
+modified: 1651671861913
 created: 1651475920819
 url: "{{ _.base_url }}/api/browse/navigation"
 name: Get Navigation Tree
-description: ""
+description: |-
+  Get folder navigation hierarchy of private folders
+  ```
+  GET /api/browse/navigation
+  ```
 method: GET
 body: {}
 parameters: []

@@ -1,18 +1,22 @@
 _id: req_afdddea447f4497093b6818c273c4d3f
 type: Request
 parentId: fld_27bd064f8f7d4e11a5cfda32d931f502
-modified: 1651640070025
+modified: 1651727567078
 created: 1651473972850
-url: "{{ _.base_url }}/api/user/check"
+url: https://inifiles.com/api/user/check
 name: Check Account By Email
-description: ""
+description: |
+  It check if the user exists
+  ```
+  POST /api/user/check
+  ```
 method: POST
 body:
   mimeType: multipart/form-data
   params:
     - id: pair_b1721b53a2db4f1c81e4079c09176dbd
       name: email
-      value: howdy@hi5ve.digitals
+      value: howdy@hi5ve.digital
       description: ""
       disabled: false
 parameters: []

@@ -1,11 +1,26 @@
 _id: req_aab26df3a4ef497eab218688b3d06d77
 type: Request
 parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651641820281
+modified: 1651671525525
 created: 1651471561821
 url: "{{ _.base_url }}/api/user/password"
-name: Update Password
-description: ""
+name: Change Password
+description: |
+  Change user password
+  ```
+  POST /api/user/password
+  ```
+
+  # Payload
+
+  ## current `string` `required`
+  The current user password.
+
+  ## password `string` `required`
+  The new user password.
+
+  ## password_confirmation `string` `required`
+  The new user password confirmation.
 method: POST
 body:
   mimeType: multipart/form-data

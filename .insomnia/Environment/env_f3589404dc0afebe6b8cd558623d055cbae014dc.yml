@@ -1,12 +1,12 @@
 _id: env_f3589404dc0afebe6b8cd558623d055cbae014dc
 type: Environment
 parentId: wrk_b05050d254624c458a60acffeba1a228
-modified: 1651646122038
+modified: 1652246352938
 created: 1651468309124
 name: Base Environment
 data:
   base_url: http://localhost:8000
-  token: 9|YihrDBVmIj8sAMSrIM6R6oYp5O3SWYVVycBm68vJ
+  token: 3|Ucvw9DVSLg8DtZFII9swrjLFDujMUMYfPaGIZqyr
 dataPropertyOrder:
   "&":
     - base_url

@@ -1,11 +1,28 @@
 _id: req_c664c6d619cc4379bb6d7709347c40dc
 type: Request
 parentId: fld_c310ad61fb5c426b87f90fabbf9cd35f
-modified: 1651646393889
+modified: 1651668749003
 created: 1651474313573
 url: "{{ _.base_url }}/api/register"
 name: Registration
-description: ""
+description: |-
+  Register new user.
+  ```
+  POST /api/register
+  ```
+  # Payload
+
+  ## name `string` `required`
+  The name of the user.
+
+  ## email `string` `required`
+  The email address of the user.
+
+  ## password `string` `required`
+  The user password.
+
+  ## password_confirmation `string` `required`
+  The user password confirmation.
 method: POST
 body:
   mimeType: multipart/form-data

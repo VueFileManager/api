@@ -1,11 +1,20 @@
 _id: req_fde427d445624f028a0ff09973b719ad
 type: Request
 parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
-modified: 1651640342798
+modified: 1651670920398
 created: 1651473576700
 url: "{{ _.base_url }}/api/user/email/verify/resend"
 name: Resend Verification Email
-description: ""
+description: |
+  Resend verification email
+  ```
+  POST /api/user/email/verify/resend
+  ```
+
+  # Payload
+
+  ## email `string` `required`
+  The user email where to send verification email
 method: POST
 body:
   mimeType: multipart/form-data

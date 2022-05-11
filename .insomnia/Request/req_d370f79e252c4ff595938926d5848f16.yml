@@ -1,11 +1,23 @@
 _id: req_d370f79e252c4ff595938926d5848f16
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1651587006022
+modified: 1651675529266
 created: 1651476144058
 url: "{{ _.base_url }}/api/search?filter=users&query=howdy@hi5ve.digital"
 name: Search Users
-description: ""
+description: |
+  Search files & folders
+  ```
+  GET /api/search?filter=users&query={keyword}
+  ```
+
+  # Arguments
+
+  ## query `string` `required`
+  Your search query to find files or folders
+
+  ## filter `string` `required`
+  Type of the active filter. Only `users` is allowed.
 method: GET
 body: {}
 parameters: []
