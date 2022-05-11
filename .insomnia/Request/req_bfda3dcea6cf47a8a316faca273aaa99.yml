@@ -1,14 +1,14 @@
 _id: req_bfda3dcea6cf47a8a316faca273aaa99
 type: Request
 parentId: fld_af48ace5c9014c87945e6550bacf5697
-modified: 1651657123680
+modified: 1652256555745
 created: 1651470911089
-url: "{{ _.base_url }}/api/user/notifications/read"
+url: "{{ _.base_url }}/api/notifications/read"
 name: Set all as read
 description: |-
   It mark all users notifications as read.
   ```
-  POST /api/user/notifications/read
+  POST /api/notifications/read
   ```
 method: POST
 body: {}

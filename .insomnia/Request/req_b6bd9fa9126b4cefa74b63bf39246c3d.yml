@@ -1,11 +1,46 @@
 _id: req_b6bd9fa9126b4cefa74b63bf39246c3d
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651585248708
+modified: 1652249360954
 created: 1651481239937
 url: "{{ _.base_url }}/api/share/vuEakfxlfrs7D5mq"
 name: Update Sharing
-description: ""
+description: >-
+  Share publicly file or folder
+
+  ```
+
+  POST /api/share/{token}
+
+  ```
+
+
+  # Payload
+
+
+  ## protected `boolean`
+
+  Determine if the folder would be publicly shared or privately secured with the password
+
+
+  ## password `string` `required when isPassword:yes`
+
+  The password which protect the content stored in the folder
+
+
+  ## permission `string` `required when is folder`
+
+  The edit permissions for the folder. Allowed permission types are `editor` or `visitor`.
+
+
+  1. editor - Can upload, delete and manage items
+
+  2. visitor - Can only browse throught the content and download them
+
+
+  ## expiration `integer`
+
+  The time in hours the link expire automatically
 method: POST
 body:
   mimeType: application/json

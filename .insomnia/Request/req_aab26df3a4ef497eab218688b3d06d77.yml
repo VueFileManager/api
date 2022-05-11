@@ -1,7 +1,7 @@
 _id: req_aab26df3a4ef497eab218688b3d06d77
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651671525525
+parentId: fld_c39aeb13e0304378a778b49e3d049682
+modified: 1652278175261
 created: 1651471561821
 url: "{{ _.base_url }}/api/user/password"
 name: Change Password
@@ -49,7 +49,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471561821
+metaSortKey: -1651471765435
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

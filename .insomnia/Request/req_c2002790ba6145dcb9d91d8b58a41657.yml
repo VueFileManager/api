@@ -1,7 +1,7 @@
 _id: req_c2002790ba6145dcb9d91d8b58a41657
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652246792284
+modified: 1652249357257
 created: 1651478950578
 url: "{{ _.base_url }}/api/zip?items={item_id}|file,{item_id}|folder"
 name: ZIP & Download Items

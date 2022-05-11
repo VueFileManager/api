@@ -1,11 +1,20 @@
 _id: req_2934678c65e84a4682253ade882f1c8c
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651585433004
+modified: 1652249362322
 created: 1651481790564
 url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/email"
 name: Send Link on Email
-description: ""
+description: |-
+  Send share link to multiple emails
+  ```
+  POST /api/share/{token}/email
+  ```
+
+  # Payload
+
+  ## emails `array` `required`
+  The array of the valid email adresses
 method: POST
 body:
   mimeType: application/json

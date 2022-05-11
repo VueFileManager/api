@@ -1,14 +1,14 @@
 _id: req_fde427d445624f028a0ff09973b719ad
 type: Request
 parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
-modified: 1651670920398
+modified: 1652278266022
 created: 1651473576700
-url: "{{ _.base_url }}/api/user/email/verify/resend"
-name: Resend Verification Email
+url: "{{ _.base_url }}/api/user/verify"
+name: Resend Verification Email (Pro)
 description: |
   Resend verification email
   ```
-  POST /api/user/email/verify/resend
+  POST /api/user/verify
   ```
 
   # Payload

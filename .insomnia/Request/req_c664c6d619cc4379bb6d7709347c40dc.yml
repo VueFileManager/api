@@ -1,10 +1,10 @@
 _id: req_c664c6d619cc4379bb6d7709347c40dc
 type: Request
-parentId: fld_c310ad61fb5c426b87f90fabbf9cd35f
-modified: 1651668749003
+parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
+modified: 1652278269677
 created: 1651474313573
 url: "{{ _.base_url }}/api/register"
-name: Registration
+name: Registration (Pro)
 description: |-
   Register new user.
   ```
@@ -56,7 +56,7 @@ headers:
     value: application/json
     description: ""
 authentication: {}
-metaSortKey: -1651474313573
+metaSortKey: -1651473576750
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

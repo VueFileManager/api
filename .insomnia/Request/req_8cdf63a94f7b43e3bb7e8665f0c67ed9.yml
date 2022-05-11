@@ -1,14 +1,14 @@
 _id: req_8cdf63a94f7b43e3bb7e8665f0c67ed9
 type: Request
 parentId: fld_af48ace5c9014c87945e6550bacf5697
-modified: 1651657119976
+modified: 1652256567143
 created: 1651470828947
-url: "{{ _.base_url }}/api/user/notifications"
+url: "{{ _.base_url }}/api/notifications"
 name: Get all
 description: |-
   It get all available user notifications.
   ```
-  GET /api/user/notifications
+  GET /api/notifications
   ```
 method: GET
 body: {}

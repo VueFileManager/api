@@ -1,11 +1,20 @@
 _id: req_344b0919921740d4827db2ab84ee61bd
 type: Request
-parentId: fld_c3204bedb3c6476bb981b85c6e1c0801
-modified: 1651671521825
+parentId: fld_c39aeb13e0304378a778b49e3d049682
+modified: 1652278170830
 created: 1651472183034
 url: "{{ _.base_url }}/api/user/settings"
 name: Update Avatar
-description: ""
+description: |
+  Update user avatar
+  ```
+  POST /api/user/avatar
+  ```
+
+  # Payload
+
+  ## avatar `file` `required`
+  The user avatar image file. Allowed are `png`, `jpg` or `jpeg`.
 method: POST
 body:
   mimeType: multipart/form-data
@@ -38,7 +47,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651471663578
+metaSortKey: -1651471765385
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

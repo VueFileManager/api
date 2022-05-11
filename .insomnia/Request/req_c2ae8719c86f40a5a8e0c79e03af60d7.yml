@@ -1,11 +1,51 @@
 _id: req_c2ae8719c86f40a5a8e0c79e03af60d7
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1651584591422
+modified: 1652249360094
 created: 1651479829129
 url: "{{ _.base_url }}/api/share/dae39525-b7ed-4e02-aacf-54ebe701ca79"
 name: Share Item
-description: ""
+description: >-
+  Share publicly file or folder
+
+  ```
+
+  POST /api/share/{item_id}
+
+  ```
+
+
+  # Payload
+
+
+  ## isPassword `boolean`
+
+  Determine if the folder would be publicly shared or privately secured with the password
+
+
+  ## password `string` `required when isPassword:yes`
+
+  The password which protect the content stored in the folder
+
+
+  ## permission `string` `required when is folder`
+
+  The edit permissions for the folder. Allowed permission types are `editor` or `visitor`.
+
+
+  1. editor - Can upload, delete and manage items
+
+  2. visitor - Can only browse throught the content and download them
+
+
+  ## expiration `integer`
+
+  The time in hours the link expire automatically
+
+
+  ## emails `array`
+
+  The array of the valid email adresses
 method: POST
 body:
   mimeType: application/json
