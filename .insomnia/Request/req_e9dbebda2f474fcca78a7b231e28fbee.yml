@@ -1,9 +1,9 @@
 _id: req_e9dbebda2f474fcca78a7b231e28fbee
 type: Request
 parentId: fld_12528324aa6b4a0bbef243ac146e65ad
-modified: 1652360027583
+modified: 1652431720689
 created: 1651482315135
-url: ""
+url: "{{ _.base_url }}/api/ping"
 name: Ping
 description: |-
   Ping the API

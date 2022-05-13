@@ -1,9 +1,9 @@
 _id: req_7dd2e0e718b34aec8ca908e37db45b77
 type: Request
 parentId: fld_1be81e5c8e4d417d894db8f455ddc734
-modified: 1652428373773
+modified: 1652431611254
 created: 1652261789178
-url: ""
+url: "{{ _.base_url }}/api/upload"
 name: File Upload
 description: >-
   Simple file upload

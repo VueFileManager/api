@@ -1,9 +1,9 @@
 _id: req_b3a0bfbb573b48db995b03c51525eb90
 type: Request
 parentId: fld_1be81e5c8e4d417d894db8f455ddc734
-modified: 1652427969614
+modified: 1652431595297
 created: 1651476781341
-url: ""
+url: "{{ _.base_url }}/api/upload/remote"
 name: Remote Upload
 description: >-
   Upload remotely files from URL
