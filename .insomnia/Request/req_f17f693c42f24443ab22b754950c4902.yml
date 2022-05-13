@@ -1,0 +1,34 @@
+_id: req_f17f693c42f24443ab22b754950c4902
+type: Request
+parentId: fld_6b95ecc4d25e49fab2428b1c07c8679d
+modified: 1652361552827
+created: 1652340757626
+url: "{{ _.base_url }}/api/subscriptions/billing-alert"
+name: Delete Alert
+description: |-
+  Delete billing alert
+  ```
+  DELETE /api/subscriptions/billing-alert
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_8dce7fad966b4ae588f96f29fe99f7ba
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651713053435.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

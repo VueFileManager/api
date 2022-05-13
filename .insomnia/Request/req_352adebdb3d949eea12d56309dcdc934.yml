@@ -1,16 +1,21 @@
 _id: req_352adebdb3d949eea12d56309dcdc934
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652249352956
+modified: 1652430204012
 created: 1651478726635
-url: "{{ _.base_url }}/api/move"
+url: "{{ _.base_url }}/api/remove"
 name: Move Item
 description: >-
   Move one or many items elsewhere
 
   ```
 
-  POST /api/remove
+  POST /api/move
+
+
+  Accept: application/json
+
+  Authorization: Bearer
 
   ```
 

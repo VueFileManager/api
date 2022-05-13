@@ -1,7 +1,7 @@
 _id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1652254358905
+modified: 1652359500211
 created: 1651474743056
 url: "{{ _.base_url }}/api/password/recover"
 name: Send recovery email
@@ -9,6 +9,8 @@ description: |
   Send email to recover password 
   ```
   POST /api/password/recover
+
+  Accept: application/json
   ```
 
   # Payload

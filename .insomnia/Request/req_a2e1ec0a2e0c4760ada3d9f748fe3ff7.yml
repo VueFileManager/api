@@ -1,0 +1,67 @@
+_id: req_a2e1ec0a2e0c4760ada3d9f748fe3ff7
+type: Request
+parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
+modified: 1652430250576
+created: 1652430037416
+url: "{{ _.base_url }}/api/file-request/{file_request_id}/create-folder"
+name: Create Folder
+description: >-
+  Create new folder for the private files
+
+  ```
+
+  POST /api/file-request/{file_request_id}/create-folder
+
+
+  Accept: application/json
+
+  Authorization: Bearer
+
+  ```
+
+
+  # Payload
+
+
+  ## name `string` `required`
+
+  The name of the new folder
+
+
+  ## parent_id `uuid`
+
+  The id of the parent folder, if not set, then the folder will be created in the home directory
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_645ecde3ddb34796870e60e6949bcd33
+      name: name
+      value: New Folder
+      description: ""
+      disabled: false
+    - id: pair_ab0c6223428240eaab48a0384a15acf0
+      name: parent_id
+      value: ""
+      description: ""
+      disabled: true
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_a2b499b88681458ca3b6789c31c7b485
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1652429947430
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

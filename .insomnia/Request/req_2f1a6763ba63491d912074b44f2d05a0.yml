@@ -1,0 +1,35 @@
+_id: req_2f1a6763ba63491d912074b44f2d05a0
+type: Request
+parentId: fld_0b8ad5b494c444378457243bd736f5cb
+modified: 1652359452533
+created: 1652345256463
+url: "{{ _.base_url }}/api/logout"
+name: Log Out
+description: |-
+  Revoke active bearer token
+  ```
+  POST /api/logout
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+method: POST
+body: {}
+parameters: []
+headers:
+  - id: pair_a771b8bea01545e4aababd53ad8c0708
+    name: Accept
+    value: application/json
+    description: ""
+    disabled: false
+authentication:
+  type: bearer
+  token: 9|jRxw1lK5EnXDj1Bc8q2al9OMjSLdJJ1zJy1tCAih
+metaSortKey: -1651473760952.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

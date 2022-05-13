@@ -1,0 +1,52 @@
+_id: req_c41f263cef9141d4be5548fc99e7da2f
+type: Request
+parentId: fld_0b8ad5b494c444378457243bd736f5cb
+modified: 1652359472089
+created: 1652342018071
+url: ""
+name: Get Bearer Token
+description: |-
+  Authenticate user and obtain bearer token
+  ```
+  POST /api/login
+
+  Accept: application/json
+  ```
+  # Payload
+
+  ## email `string` `required`
+  The email of the user.
+
+  ## password `string` `required`
+  The user password.
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_b1721b53a2db4f1c81e4079c09176dbd
+      name: email
+      value: howdy@hi5ve.digital
+      description: ""
+      disabled: false
+    - id: pair_f31d9ab0eb38451e87f5219b75871f99
+      name: password
+      value: vuefilemanager
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_173b9edb9931419c8517da7ba3f1fae7
+  - id: pair_a771b8bea01545e4aababd53ad8c0708
+    name: Accept
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1651473945155.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

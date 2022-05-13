@@ -1,0 +1,64 @@
+_id: req_fa2e1e5fc030465aaa9259b8f90308e5
+type: Request
+parentId: fld_0b2568e023e444a19fa0bfaf48765649
+modified: 1652430102578
+created: 1652427971484
+url: "{{ _.base_url
+  }}/api/file-request/badd4c24-2b54-46b4-acaa-db8be0028060/upload/remote"
+name: Remote Upload
+description: >-
+  Upload remotely files from URL
+
+  ```
+
+  POST /api/file-request/{file_request_id}/upload/remote
+
+
+  Accept: application/json
+
+  Authorization: Bearer
+
+  ```
+
+
+  # Payload
+
+  ## parent_id `uuid`
+
+  The uuid of the parent folder. If it's not set, then the files will be uploaded into home location
+
+
+
+  ## urls `array` `required`
+
+  The array of valid file urls to download remotely
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"parent_id": null,
+    	"urls": [
+    		"https://images.pexels.com/photos/11713102/pexels-photo-11713102.jpeg?cs=srgb&dl=pexels-yana-moroz-11713102.jpg&fm=jpg"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_88c6772de32449a1bdd39b288e7df0da
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476388238.1562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

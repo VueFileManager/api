@@ -1,7 +1,7 @@
 _id: req_121ae2d642c54493810daee81ec8ab61
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652249368587
+modified: 1652359595025
 created: 1651475420969
 url: "{{ _.base_url }}/api/browse/latest"
 name: Get Recent Uploads
@@ -9,6 +9,9 @@ description: |-
   Get latest uploads
   ```
   GET /api/browse/latest
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 method: GET
 body: {}

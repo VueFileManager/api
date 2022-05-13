@@ -1,7 +1,7 @@
 _id: req_a19dba17fb534f24bb304790b7040126
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1652278165911
+modified: 1652360001891
 created: 1651471765335
 url: "{{ _.base_url }}/api/user/settings"
 name: Update Setting
@@ -9,6 +9,9 @@ description: |
   Update user settings
   ```
   POST /api/user/settings
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 
   # Payload

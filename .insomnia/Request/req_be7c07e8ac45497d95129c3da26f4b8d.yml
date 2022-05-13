@@ -1,0 +1,54 @@
+_id: req_be7c07e8ac45497d95129c3da26f4b8d
+type: Request
+parentId: fld_6b95ecc4d25e49fab2428b1c07c8679d
+modified: 1652362101788
+created: 1652339344505
+url: "{{ _.base_url }}/api/subscriptions/billing-alert"
+name: Update Alert
+description: |
+  Update billing alert for certain usage amount in plan currency
+  ```
+  POST /api/subscriptions/billing-alert
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+
+  # Payload
+
+  ## amount `integer` `required`
+  The amount in plan currency that has to be reached
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_ddccbe4e72274be4a084321a41f61a91
+      name: amount
+      value: "33"
+      description: ""
+      disabled: false
+    - id: pair_b8421d2fcb594fe1b375b01780ee20b8
+      name: _method
+      value: PUT
+      description: ""
+      disabled: false
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_af14c46852fc4e6f82a5ad082a0e4b03
+  - id: pair_8dce7fad966b4ae588f96f29fe99f7ba
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651921765879.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

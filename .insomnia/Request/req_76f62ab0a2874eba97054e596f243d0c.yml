@@ -1,0 +1,30 @@
+_id: req_76f62ab0a2874eba97054e596f243d0c
+type: Request
+parentId: fld_583aaad7c75245d085ea02e242485f88
+modified: 1652359941017
+created: 1652340897665
+url: "{{ _.base_url }}/api/subscriptions/detail"
+name: Get Subscription
+description: |-
+  Get all user transactions
+  ```
+  GET /api/user/transactions
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651471149961
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

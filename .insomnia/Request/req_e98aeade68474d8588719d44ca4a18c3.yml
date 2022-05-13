@@ -1,0 +1,62 @@
+_id: req_e98aeade68474d8588719d44ca4a18c3
+type: Request
+parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
+modified: 1652430263727
+created: 1652430049832
+url: "{{ _.base_url }}/api/file-request/{file_request_id}/rename/{item_id}"
+name: Rename Item
+description: |-
+  Create new folder for the private files
+  ```
+  POST /api/file-request/{file_request_id}/rename/{item_id}
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+
+  # Payload
+
+  ## name `string` `required`
+  The new item name
+
+  ## type `string` `required`
+  The type of the renaming item. Allowed types are `folder` or `file`
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_645ecde3ddb34796870e60e6949bcd33
+      name: name
+      value: New name
+      description: ""
+      disabled: false
+    - id: pair_ad69b657c066468cb8f4505d7b5fbecf
+      name: type
+      value: folder
+      description: ""
+      disabled: false
+    - id: pair_32099628b0414dd1a95e5be20591f65a
+      name: _method
+      value: patch
+      description: ""
+      disabled: false
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_3d6221a8cb8545d7b396a4eca9b7c256
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1652429947380
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

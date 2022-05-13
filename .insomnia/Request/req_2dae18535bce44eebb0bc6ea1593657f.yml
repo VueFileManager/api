@@ -1,7 +1,7 @@
 _id: req_2dae18535bce44eebb0bc6ea1593657f
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652249350629
+modified: 1652430122123
 created: 1651476452391
 url: "{{ _.base_url }}/api/create-folder"
 name: Create Folder
@@ -11,6 +11,11 @@ description: >-
   ```
 
   POST /api/create-folder
+
+
+  Accept: application/json
+
+  Authorization: Bearer
 
   ```
 

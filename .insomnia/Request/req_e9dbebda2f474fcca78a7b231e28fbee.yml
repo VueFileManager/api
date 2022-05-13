@@ -1,14 +1,16 @@
 _id: req_e9dbebda2f474fcca78a7b231e28fbee
 type: Request
-parentId: wrk_b05050d254624c458a60acffeba1a228
-modified: 1652247216200
+parentId: fld_12528324aa6b4a0bbef243ac146e65ad
+modified: 1652360027583
 created: 1651482315135
-url: "{{ _.base_url }}/api/ping"
+url: ""
 name: Ping
 description: |-
   Ping the API
   ```
   POST /api/ping
+
+  Accept: application/json
   ```
 method: GET
 body: {}

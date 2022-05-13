@@ -1,0 +1,98 @@
+_id: req_216a57c1056249c4b893087998ad6d3a
+type: Request
+parentId: fld_0b2568e023e444a19fa0bfaf48765649
+modified: 1652430106790
+created: 1652428375695
+url: "{{ _.base_url }}/api/file-request/badd4c24-2b54-46b4-acaa-db8be0028060/upload"
+name: File Upload
+description: >-
+  Simple file upload
+
+  ```
+
+  POST /api/file-request/{file_request_id}/upload
+
+
+  Accept: application/json
+
+  Authorization: Bearer
+
+  ```
+
+
+  # Payload
+
+  ## name `string` `required`
+
+  The file name, must be the same for all file chunks
+
+
+  ## file `file` `required`
+
+  The file or part of the file as a chunk
+
+
+  ## extension `string` `required`
+
+  The file extension
+
+
+  ## parent_id `uuid`
+
+  The uuid of the parent folder. If it's not set, then the files will be uploaded into home location
+
+
+  ## path `string`
+
+  The directory path of the file. Use it when you'd like to upload folder and recreate folder structure in the backend. E.g. `/Documents/Photos/wallpaper.jpg`
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_139f3890c53c475ab501dde26bac5ce4
+      name: name
+      value: vuefilemanager-hero
+      description: ""
+      disabled: false
+    - id: pair_2b50c95a59b54204bdaf96790e1ea659
+      name: file
+      value: ""
+      description: ""
+      type: file
+      multiline: null
+      fileName: /Users/carodej/Desktop/VueFileManager/vuefilemanager-screenshot-light.png
+    - id: pair_6400247d259a45719408c0246f26b7d8
+      name: extension
+      value: jpg
+      description: ""
+      disabled: false
+    - id: pair_5790da39a29b4056b4bff1def0c76203
+      name: path
+      value: ""
+      description: ""
+      disabled: true
+    - id: pair_e3eb8bc0ba1c44e0a166b2ad2ebf6107
+      name: parent_id
+      value: ""
+      description: ""
+      disabled: true
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_88c6772de32449a1bdd39b288e7df0da
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476388288.1562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

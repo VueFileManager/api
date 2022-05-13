@@ -1,14 +1,17 @@
 _id: req_b1632631ad714cfda22263c0c03036f8
 type: Request
 parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652247170248
+modified: 1652366967940
 created: 1651504340992
-url: "{{ _.base_url }}/api/upload-request"
-name: Create Upload Request
+url: "{{ _.base_url }}/api/file-request"
+name: Create File Request
 description: |-
-  Create new upload request.
+  Create new file request.
   ```
-  POST /api/upload-request
+  POST /api/file-request
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 
   # Payload

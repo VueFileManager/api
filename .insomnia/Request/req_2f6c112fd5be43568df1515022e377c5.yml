@@ -1,7 +1,7 @@
 _id: req_2f6c112fd5be43568df1515022e377c5
 type: Request
 parentId: fld_6ff0ba7c9c674ed3a5cc3a201136a471
-modified: 1652253241692
+modified: 1652359708976
 created: 1651482088572
 url: "{{ _.base_url }}/api/favourites"
 name: Add to Favourites
@@ -9,6 +9,9 @@ description: |-
   Add folder to favourites
   ```
   POST /api/favourites
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 
   # Payload

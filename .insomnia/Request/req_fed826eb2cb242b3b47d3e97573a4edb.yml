@@ -1,0 +1,37 @@
+_id: req_fed826eb2cb242b3b47d3e97573a4edb
+type: Request
+parentId: fld_9e03e083f5e9430e945ebd4f662d8fa0
+modified: 1652431278844
+created: 1652431225113
+url: "{{ _.base_url }}/api/file-request/{file_request_id}/browse/folders/all"
+name: Browse Files
+description: |-
+  Get all file request folders
+  ```
+  GET /api/file-request/{file_request_id}/browse/folders/all
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+  Get content of single file request folder
+  ```
+  GET /api/file-request/{file_request_id}/browse/folders/{folder_id}
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651474759347.3906
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

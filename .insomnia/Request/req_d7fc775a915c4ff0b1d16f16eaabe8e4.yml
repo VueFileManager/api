@@ -1,0 +1,76 @@
+_id: req_d7fc775a915c4ff0b1d16f16eaabe8e4
+type: Request
+parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
+modified: 1652430267268
+created: 1652430081580
+url: "{{ _.base_url }}/api/file-request/{file_request_id}/move"
+name: Move Item
+description: >-
+  Move one or many items elsewhere
+
+  ```
+
+  POST /api/file-request/{file_request_id}/move
+
+
+  Accept: application/json
+
+  Authorization: Bearer
+
+  ```
+
+
+  # Payload
+
+
+  ## items `array` `required`
+
+  The name of the new folder
+
+
+  ## items.*.force_delete `boolean` `required`
+
+  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be softly deleted. 
+
+
+  ## items.*.type `string` `required`
+
+  The type of the deleting item. Allowed types are `folder` or `file`.
+
+
+  ## items.*.id `uuid` `required`
+
+  The ID of the item.
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"to_id": null,
+    	"items": [
+    		{
+    			"type": "file",
+    			"id": "{file_id}"
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_f770877e639a458383c7f900cb19a85e
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1652429947280
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,7 +1,7 @@
 _id: req_3235249673bd4e15a4ae0bd391c74370
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1651671387918
+modified: 1652359511220
 created: 1651474857302
 url: "{{ _.base_url }}/api/password/reset"
 name: Reset Password
@@ -9,6 +9,8 @@ description: |
   Update user avatar
   ```
   POST /api/password/reset
+
+  Accept: application/json
   ```
 
   # Payload

@@ -1,0 +1,31 @@
+_id: req_fe64d612203d405b8c59f484dfca615b
+type: Request
+parentId: fld_9e03e083f5e9430e945ebd4f662d8fa0
+modified: 1652431073745
+created: 1652430956186
+url: "{{ _.base_url
+  }}/api/file-request/badd4c24-2b54-46b4-acaa-db8be0028060/navigation"
+name: Get Navigation Tree
+description: |-
+  Get folder navigation hierarchy of private folders
+  ```
+  GET /api/file-request/{file_request_id}/navigation
+
+  Accept: application/json
+  Authorization: Bearer
+  ```
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651474759297.3906
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

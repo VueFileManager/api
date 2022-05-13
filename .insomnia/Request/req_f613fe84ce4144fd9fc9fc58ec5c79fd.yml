@@ -1,18 +1,24 @@
 _id: req_f613fe84ce4144fd9fc9fc58ec5c79fd
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652249367321
+modified: 1652431224018
 created: 1651475089539
-url: "{{ _.base_url }}/api/browse/folders/all"
+url: ""
 name: Get My Files
 description: |-
   Get all private folders
   ```
   GET /api/browse/folders/all
+
+  Accept: application/json
+  Authorization: Bearer
   ```
   Get content of single private folder
   ```
   GET /api/browse/folders/{folder_id}
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 method: GET
 body: {}

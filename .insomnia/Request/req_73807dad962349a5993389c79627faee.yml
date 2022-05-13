@@ -1,7 +1,7 @@
 _id: req_73807dad962349a5993389c79627faee
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652252838904
+modified: 1652359880272
 created: 1651501953360
 url: "{{ _.base_url }}/api/teams/folders/e02b38c9-8806-4907-b793-20331e5b4dd3"
 name: Update Team Folder
@@ -11,6 +11,11 @@ description: >-
   ```
 
   PATCH /api/teams/folders/{folder_id}
+
+
+  Accept: application/json
+
+  Authorization: Bearer
 
   ```
 

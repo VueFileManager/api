@@ -1,7 +1,7 @@
 _id: req_fa7cd45f66a7499fb00c5df3a93ff5e4
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652249383488
+modified: 1652359873229
 created: 1651475837385
 url: "{{ _.base_url }}/api/teams/shared-with-me/all"
 name: Get Shared With Me
@@ -9,10 +9,16 @@ description: |-
   Get all shared with me folders
   ```
   GET /api/teams/shared-with-me/all
+
+  Accept: application/json
+  Authorization: Bearer
   ```
   Get content of single shared with me folder
   ```
   GET /api/teams/shared-with-me/{folder_id}
+
+  Accept: application/json
+  Authorization: Bearer
   ```
 method: GET
 body: {}

@@ -1,0 +1,38 @@
+_id: req_a7677c8f719f40288c2ee7572d571c8b
+type: Request
+parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
+modified: 1652366268391
+created: 1652362607061
+url: "{{ _.base_url }}/api/file-request/b7c6e705-6166-4db8-a5bb-922ec588f998"
+name: Mark As Filled
+description: >-
+  Mark file request as filled. This close the door for uploading and send the
+  user notification about that event.
+
+  ```
+
+  POST /api/file-request/{uuid}
+
+
+  Accept: application/json
+
+  ```
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_af06f639a6bf4710b24713f9a9d9038f
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651493328013.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

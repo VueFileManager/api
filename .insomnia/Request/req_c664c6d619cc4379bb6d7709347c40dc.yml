@@ -1,7 +1,7 @@
 _id: req_c664c6d619cc4379bb6d7709347c40dc
 type: Request
 parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
-modified: 1652278269677
+modified: 1652359548060
 created: 1651474313573
 url: "{{ _.base_url }}/api/register"
 name: Registration (Pro)
@@ -9,6 +9,8 @@ description: |-
   Register new user.
   ```
   POST /api/register
+
+  Accept: application/json
   ```
   # Payload
 

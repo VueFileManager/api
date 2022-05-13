@@ -1,7 +1,7 @@
 _id: req_c2ae8719c86f40a5a8e0c79e03af60d7
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652249360094
+modified: 1652359723082
 created: 1651479829129
 url: "{{ _.base_url }}/api/share/dae39525-b7ed-4e02-aacf-54ebe701ca79"
 name: Share Item
@@ -11,6 +11,11 @@ description: >-
   ```
 
   POST /api/share/{item_id}
+
+
+  Accept: application/json
+
+  Authorization: Bearer
 
   ```
 
