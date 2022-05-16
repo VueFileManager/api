@@ -1,17 +1,16 @@
-_id: req_e98aeade68474d8588719d44ca4a18c3
+_id: req_5c150246cb3245e0ab9cee1759f9cae7
 type: Request
-parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652435011943
-created: 1652430049832
-url: "{{ _.base_url }}/api/file-request/{file_request_id}/rename/{item_id}"
+parentId: fld_b63e622064614743b628f68689ec2bde
+modified: 1652683333555
+created: 1652434975422
+url: "{{ _.base_url }}/api/sharing/rename/{token}"
 name: Rename Item
 description: |-
   Create new folder for the private files
   ```
-  POST /api/file-request/{file_request_id}/rename/{item_id}
+  POST /api/sharing/rename/{token}
 
   Accept: application/json
-  Authorization: Bearer
   ```
 
   # Payload

@@ -1,21 +1,19 @@
-_id: req_a2e1ec0a2e0c4760ada3d9f748fe3ff7
+_id: req_c86cb96e87d9483ea75b804973a2d5f4
 type: Request
-parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652435010527
-created: 1652430037416
-url: "{{ _.base_url }}/api/file-request/{file_request_id}/create-folder"
+parentId: fld_b63e622064614743b628f68689ec2bde
+modified: 1652682088959
+created: 1652434975419
+url: "{{ _.base_url }}/api/sharing/create-folder/H7wDFUPPwMCmlDSJ"
 name: Create Folder
 description: >-
   Create new folder for the private files
 
   ```
 
-  POST /api/file-request/{file_request_id}/create-folder
+  POST /api/sharing/create-folder/{token}
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 
@@ -54,9 +52,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947430
 isPrivate: false
 settingStoreCookies: true

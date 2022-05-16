@@ -1,0 +1,60 @@
+_id: req_14d454a5e56c47ef8353d6f26ef2e117
+type: Request
+parentId: fld_808c7c85abbf4714901f68fa481489fa
+modified: 1652686064624
+created: 1652435001654
+url: "{{ _.base_url }}/api/sharing/upload/remote/Ukj4IwzCpVMIIseM"
+name: Remote Upload
+description: >-
+  Upload remotely files from URL
+
+  ```
+
+  POST /api/sharing/upload/remote/{token}
+
+
+  Accept: application/json
+
+  ```
+
+
+  # Payload
+
+  ## parent_id `uuid`
+
+  The uuid of the parent folder. If it's not set, then the files will be uploaded into home location
+
+
+
+  ## urls `array` `required`
+
+  The array of valid file urls to download remotely
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"urls": [
+    		"https://deepsource.io/_nuxt/img/lewis.6a776c9.png"
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
+  - id: pair_88c6772de32449a1bdd39b288e7df0da
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651476388238.1562
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

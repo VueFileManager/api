@@ -1,21 +1,19 @@
-_id: req_d7fc775a915c4ff0b1d16f16eaabe8e4
+_id: req_4a0d335ad1f7471a80e796cb8aa3f96f
 type: Request
-parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652435013310
-created: 1652430081580
-url: "{{ _.base_url }}/api/file-request/{file_request_id}/move"
-name: Move Item
+parentId: fld_b63e622064614743b628f68689ec2bde
+modified: 1652683332655
+created: 1652434975425
+url: "{{ _.base_url }}/api/sharing/remove/{token}"
+name: Delete Item
 description: >-
-  Move one or many items elsewhere
+  Delete one or many items
 
   ```
 
-  POST /api/file-request/{file_request_id}/move
+  POST /api/sharing/remove/{token}
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 
@@ -46,11 +44,11 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"to_id": null,
     	"items": [
     		{
-    			"type": "file",
-    			"id": "{file_id}"
+    			"force_delete": false,
+    			"type": "image",
+    			"id": "03a76121-369e-4473-9baf-1e4225823ed1"
     		}
     	]
     }
@@ -59,14 +57,14 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_7f881fab6a5f48e9ae26c2ea51d6e314
-  - id: pair_f770877e639a458383c7f900cb19a85e
+  - id: pair_61f62f1ff45e437085cbb5cd172e6da2
     name: Accept
     value: application/json
     description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1652429947280
+metaSortKey: -1652429947330
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

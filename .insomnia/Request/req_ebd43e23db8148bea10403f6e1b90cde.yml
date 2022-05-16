@@ -1,0 +1,34 @@
+_id: req_ebd43e23db8148bea10403f6e1b90cde
+type: Request
+parentId: fld_bfc5036c145448a8a7e93f5bd26c9fd5
+modified: 1652686095042
+created: 1652434990256
+url: "{{ _.base_url
+  }}/api/sharing/folders/3691e3e4-c965-4957-9bd1-0f2acbb939db/Ukj4IwzCpVMIIseM"
+name: Browse Files
+description: |-
+  Get content of single file request folder
+  ```
+  GET /api/sharing/folders/{folder_id}/{token}
+
+  Accept: application/json
+  ```
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_96ee13d609d14a9292c6ddb3d29aa3dc
+    name: Accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1651474759347.3906
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

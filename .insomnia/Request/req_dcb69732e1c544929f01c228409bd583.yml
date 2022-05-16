@@ -1,21 +1,19 @@
-_id: req_d7fc775a915c4ff0b1d16f16eaabe8e4
+_id: req_dcb69732e1c544929f01c228409bd583
 type: Request
-parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652435013310
-created: 1652430081580
-url: "{{ _.base_url }}/api/file-request/{file_request_id}/move"
+parentId: fld_b63e622064614743b628f68689ec2bde
+modified: 1652683330793
+created: 1652434975427
+url: "{{ _.base_url }}/api/sharing/move/{token}"
 name: Move Item
 description: >-
   Move one or many items elsewhere
 
   ```
 
-  POST /api/file-request/{file_request_id}/move
+  POST /api/sharing/move/{token}
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 

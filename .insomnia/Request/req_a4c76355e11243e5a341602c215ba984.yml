@@ -1,9 +1,9 @@
-_id: req_d1c8f1052f074e5a8ec82e002a401a2f
+_id: req_a4c76355e11243e5a341602c215ba984
 type: Request
-parentId: fld_0b2568e023e444a19fa0bfaf48765649
-modified: 1652429973764
-created: 1652427889436
-url: "{{ _.base_url }}/api/file-request/{file_request_id}/upload/chunks"
+parentId: fld_808c7c85abbf4714901f68fa481489fa
+modified: 1652685338452
+created: 1652435001651
+url: "{{ _.base_url }}/api/sharing/upload/chunks/Ukj4IwzCpVMIIseM"
 name: File Chunks Upload
 description: >-
   If you want to upload big files, sometimes you have to cut the files into many
@@ -12,12 +12,10 @@ description: >-
 
   ```
 
-  POST /api/file-request/{file_request_id}/upload/chunks
+  POST /api/sharing/upload/chunks/{token}
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 
@@ -79,9 +77,9 @@ body:
       disabled: false
     - id: pair_5790da39a29b4056b4bff1def0c76203
       name: path
-      value: ""
+      value: /tru/man/mora/
       description: ""
-      disabled: true
+      disabled: false
     - id: pair_e3eb8bc0ba1c44e0a166b2ad2ebf6107
       name: parent_id
       value: ""

@@ -31,7 +31,6 @@ body:
       value: Jane
       description: ""
       type: file
-      multiline: null
       fileName: /Users/carodej/Desktop/VueFileManager/Avatars/avatar-01.png
     - id: pair_da99352e2c474768b07c1539fafd3642
       name: _method
