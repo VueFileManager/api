@@ -1,9 +1,9 @@
 _id: req_c41f263cef9141d4be5548fc99e7da2f
 type: Request
 parentId: fld_0b8ad5b494c444378457243bd736f5cb
-modified: 1652359472089
+modified: 1652774185970
 created: 1652342018071
-url: ""
+url: "{{ _.base_url }}/api/login"
 name: Get Bearer Token
 description: |-
   Authenticate user and obtain bearer token

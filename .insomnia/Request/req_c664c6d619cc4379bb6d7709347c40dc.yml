@@ -1,7 +1,7 @@
 _id: req_c664c6d619cc4379bb6d7709347c40dc
 type: Request
 parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
-modified: 1652359548060
+modified: 1652771694067
 created: 1651474313573
 url: "{{ _.base_url }}/api/register"
 name: Registration (Pro)
@@ -36,7 +36,7 @@ body:
       disabled: false
     - id: pair_7b6e5d79fa1c45669aa89b08be681dff
       name: email
-      value: jane@doe.com
+      value: jane@does.com
       description: ""
       disabled: false
     - id: pair_f7e911ed85aa422eb3de4a5cd676fa55

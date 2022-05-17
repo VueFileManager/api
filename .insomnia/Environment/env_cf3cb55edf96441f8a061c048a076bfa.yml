@@ -1,0 +1,16 @@
+_id: env_cf3cb55edf96441f8a061c048a076bfa
+type: Environment
+parentId: env_f3589404dc0afebe6b8cd558623d055cbae014dc
+modified: 1652804233719
+created: 1652804171409
+name: Config
+data:
+  base_url: http://localhost:8000
+  token: 3|Ucvw9DVSLg8DtZFII9swrjLFDujMUMYfPaGIZqyr
+dataPropertyOrder:
+  "&":
+    - base_url
+    - token
+color: null
+isPrivate: false
+metaSortKey: 1652804171409

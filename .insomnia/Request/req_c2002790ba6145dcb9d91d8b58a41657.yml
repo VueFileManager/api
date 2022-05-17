@@ -1,9 +1,9 @@
 _id: req_c2002790ba6145dcb9d91d8b58a41657
 type: Request
 parentId: fld_56bf1280cc4643648c405bbfc1609896
-modified: 1652433130036
+modified: 1652772880496
 created: 1651478950578
-url: "{{ _.base_url }}/api/zip?items={item_id}|file,{item_id}|folder"
+url: "{{ _.base_url }}/api/zip"
 name: ZIP & Download
 description: >
   Zip single or multiple files or folders and download them
@@ -41,7 +41,11 @@ description: >
   The type of the requested item. Allowed types are `folder` or `file`.
 method: GET
 body: {}
-parameters: []
+parameters:
+  - id: pair_4bd35f17b3ff4abcb34dc7cae2fbf3b7
+    name: items
+    value: "{item_id}|file,{item_id}|folder"
+    description: ""
 headers:
   - id: pair_8dfbcca378ba493a88e56aa6637b8655
     name: Accept
