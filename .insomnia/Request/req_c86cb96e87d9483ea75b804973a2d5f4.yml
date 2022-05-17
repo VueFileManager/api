@@ -1,7 +1,7 @@
 _id: req_c86cb96e87d9483ea75b804973a2d5f4
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1652682088959
+modified: 1652805915029
 created: 1652434975419
 url: "{{ _.base_url }}/api/sharing/create-folder/H7wDFUPPwMCmlDSJ"
 name: Create Folder
@@ -16,6 +16,12 @@ description: >-
   Accept: application/json
 
   ```
+
+
+  # URL Parameters
+
+
+  #### token `string`
 
 
   # Payload

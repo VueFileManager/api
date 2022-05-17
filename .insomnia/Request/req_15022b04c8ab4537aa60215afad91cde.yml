@@ -1,7 +1,7 @@
 _id: req_15022b04c8ab4537aa60215afad91cde
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652772817267
+modified: 1652805549585
 created: 1651502385431
 url: "{{ _.base_url
   }}/api/teams/folders/a42609e3-6f78-4bc8-9ef2-436d36e3937c/convert"
@@ -15,6 +15,9 @@ description: |-
   Accept: application/json
   Authorization: Bearer
   ```
+  # URL Parameters
+
+  #### folder_id `string`
 
   # Payload
 

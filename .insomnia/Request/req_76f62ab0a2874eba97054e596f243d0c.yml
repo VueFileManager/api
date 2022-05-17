@@ -1,7 +1,7 @@
 _id: req_76f62ab0a2874eba97054e596f243d0c
 type: Request
 parentId: fld_583aaad7c75245d085ea02e242485f88
-modified: 1652772908567
+modified: 1652806085542
 created: 1652340897665
 url: "{{ _.base_url }}/api/subscriptions/detail"
 name: Get Subscription

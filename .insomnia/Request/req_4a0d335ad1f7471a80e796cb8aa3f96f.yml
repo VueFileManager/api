@@ -1,7 +1,7 @@
 _id: req_4a0d335ad1f7471a80e796cb8aa3f96f
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1652772844105
+modified: 1652805890470
 created: 1652434975425
 url: "{{ _.base_url }}/api/sharing/remove/{token}"
 name: Delete Item
@@ -16,6 +16,12 @@ description: >-
   Accept: application/json
 
   ```
+
+
+  # URL Parameters
+
+
+  #### token `string`
 
 
   # Payload

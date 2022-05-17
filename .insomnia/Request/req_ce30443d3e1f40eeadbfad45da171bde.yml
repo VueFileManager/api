@@ -1,7 +1,7 @@
 _id: req_ce30443d3e1f40eeadbfad45da171bde
 type: Request
 parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652366233932
+modified: 1652805160405
 created: 1651504533271
 url: "{{ _.base_url }}/api/file-request/d63075b0-2975-4a26-82d0-82472db9225d"
 name: Get File Request Detail
@@ -13,6 +13,9 @@ description: |-
 
   Accept: application/json
   ```
+  # URL Parameters
+
+  #### file_request_id `string`
 method: GET
 body: {}
 parameters: []

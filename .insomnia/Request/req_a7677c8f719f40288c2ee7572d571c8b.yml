@@ -1,7 +1,7 @@
 _id: req_a7677c8f719f40288c2ee7572d571c8b
 type: Request
 parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652772772050
+modified: 1652805170633
 created: 1652362607061
 url: "{{ _.base_url }}/api/file-request/b7c6e705-6166-4db8-a5bb-922ec588f998"
 name: Mark As Filled
@@ -11,12 +11,17 @@ description: >-
 
   ```
 
-  POST /api/file-request/{uuid}
+  POST /api/file-request/{file_request_id}
 
 
   Accept: application/json
 
   ```
+
+  # URL Parameters
+
+
+  #### file_request_id `string`
 method: DELETE
 body: {}
 parameters: []

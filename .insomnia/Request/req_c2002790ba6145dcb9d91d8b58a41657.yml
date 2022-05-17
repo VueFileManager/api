@@ -1,7 +1,7 @@
 _id: req_c2002790ba6145dcb9d91d8b58a41657
 type: Request
 parentId: fld_56bf1280cc4643648c405bbfc1609896
-modified: 1652772880496
+modified: 1652806025551
 created: 1651478950578
 url: "{{ _.base_url }}/api/zip"
 name: ZIP & Download
@@ -28,7 +28,7 @@ description: >
   ```
 
 
-  # Arguments
+  # URL Parameters
 
 
   ## item_id `uuid` `required`

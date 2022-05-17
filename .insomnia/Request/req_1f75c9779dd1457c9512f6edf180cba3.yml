@@ -1,7 +1,7 @@
 _id: req_1f75c9779dd1457c9512f6edf180cba3
 type: Request
 parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652359847450
+modified: 1652805505702
 created: 1651503088072
 url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
 name: Decline Team Folder Invitation
@@ -13,6 +13,9 @@ description: |-
 
   Accept: application/json
   ```
+  # URL Parameters
+
+  #### invitation_id `string`
 method: DELETE
 body: {}
 parameters: []

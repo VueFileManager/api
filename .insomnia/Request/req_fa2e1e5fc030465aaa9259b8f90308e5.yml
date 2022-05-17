@@ -1,7 +1,7 @@
 _id: req_fa2e1e5fc030465aaa9259b8f90308e5
 type: Request
 parentId: fld_0b2568e023e444a19fa0bfaf48765649
-modified: 1652772781419
+modified: 1652805177887
 created: 1652427971484
 url: "{{ _.base_url
   }}/api/file-request/badd4c24-2b54-46b4-acaa-db8be0028060/upload/remote"
@@ -19,6 +19,11 @@ description: >-
   Authorization: Bearer
 
   ```
+
+  # URL Parameters
+
+
+  #### file_request_id `string`
 
 
   # Payload

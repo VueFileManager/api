@@ -1,7 +1,7 @@
 _id: req_c3536499fbc64ad180abd18bd3575f77
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1652772835790
+modified: 1652805822795
 created: 1652435001656
 url: "{{ _.base_url }}/api/sharing/upload/Ukj4IwzCpVMIIseM"
 name: File Upload
@@ -16,6 +16,11 @@ description: >-
   Accept: application/json
 
   ```
+
+  # URL Parameters
+
+
+  #### token `string`
 
 
   # Payload

@@ -1,7 +1,7 @@
 _id: req_681f6d4d622349418834285dbd9dc67b
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652772799074
+modified: 1652805351464
 created: 1652430065534
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/remove"
 name: Delete Item
@@ -18,6 +18,11 @@ description: >-
   Authorization: Bearer
 
   ```
+
+  # URL Parameters
+
+
+  #### file_request_id `string`
 
 
   # Payload

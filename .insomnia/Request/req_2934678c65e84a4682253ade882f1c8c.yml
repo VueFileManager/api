@@ -1,7 +1,7 @@
 _id: req_2934678c65e84a4682253ade882f1c8c
 type: Request
 parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652772826573
+modified: 1652805667432
 created: 1651481790564
 url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/email"
 name: Send Link on Email
@@ -13,6 +13,9 @@ description: |-
   Accept: application/json
   Authorization: Bearer
   ```
+  # URL Parameters
+
+  #### token `string`
 
   # Payload
 

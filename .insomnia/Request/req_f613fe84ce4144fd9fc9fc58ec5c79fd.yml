@@ -1,7 +1,7 @@
 _id: req_f613fe84ce4144fd9fc9fc58ec5c79fd
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652772861619
+modified: 1652806002053
 created: 1651475089539
 url: "{{ _.base_url }}/api/browse/folders/all"
 name: Get My Files
@@ -20,6 +20,9 @@ description: |-
   Accept: application/json
   Authorization: Bearer
   ```
+  ## URL Parameters
+
+  #### folder_id `string`
 method: GET
 body: {}
 parameters: []
