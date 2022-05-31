@@ -1,7 +1,7 @@
 _id: req_77254d006667445bbb05fbf6b107418c
 type: Request
-parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652805646311
+parentId: fld_ae9be34e05c143c9b73f0de89e01a697
+modified: 1654002502657
 created: 1651481099717
 url: "{{ _.base_url }}/api/share/revoke"
 name: Cancel Sharing
@@ -24,7 +24,7 @@ body:
   text: |-
     {
     	"tokens": [
-    		"vuEakfxlfrs7D5mq"
+    		"WNFmojqjgoIjIFJv"
     	]
     }
 parameters: []
@@ -39,7 +39,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651478140760
+metaSortKey: -1651479828929
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

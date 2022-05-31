@@ -1,20 +1,20 @@
 _id: req_d370f79e252c4ff595938926d5848f16
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1652805615390
+modified: 1654002501340
 created: 1651476144058
 url: "{{ _.base_url }}/api/search"
 name: Search Users
 description: |
   Search files & folders
   ```
-  GET /api/search?filter=users&query={keyword}
+  GET /api/search
 
   Accept: application/json
   Authorization: Bearer
   ```
 
-  # Arguments
+  # Query Parameters
 
   ## query `string` `required`
   Your search query to find files or folders
@@ -40,6 +40,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
+  disabled: false
 metaSortKey: -1651474753883.5938
 isPrivate: false
 settingStoreCookies: true

@@ -1,22 +1,48 @@
 _id: req_3ac29484232b4b6fb4056647ec2a5290
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652805989483
+modified: 1654002530981
 created: 1651475614830
 url: "{{ _.base_url }}/api/browse/share"
 name: Get Publicly Shared
 description: |-
-  Get all publicly shared items
+  Get all your publicly shared folders and files
   ```
   GET /api/browse/share
 
   Accept: application/json
   Authorization: Bearer
   ```
+  # Query Parameters
+
+  ### page `integer`
+  Get the paginated results
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_6051034c655a4ab09bb42a92244c118d
+    name: page
+    value: "1"
+    description: ""
+  - id: pair_3b754a8ca57247d9aa4aeb52adade67c
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_188dcda659fa4d398611350b31cbdca3
+    name: direction
+    value: DESC
+    description: ""
+headers:
+  - id: pair_d6dd701a4b4d425ca710e6be0a0b461b
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

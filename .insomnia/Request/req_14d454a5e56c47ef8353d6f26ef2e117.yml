@@ -1,9 +1,9 @@
 _id: req_14d454a5e56c47ef8353d6f26ef2e117
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1652805811257
+modified: 1654002508058
 created: 1652435001654
-url: "{{ _.base_url }}/api/sharing/upload/remote/Ukj4IwzCpVMIIseM"
+url: "{{ _.base_url }}/api/sharing/upload/remote/{token}"
 name: Remote Upload
 description: >-
   Upload remotely files from URL
@@ -52,9 +52,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651476388238.1562
 isPrivate: false
 settingStoreCookies: true

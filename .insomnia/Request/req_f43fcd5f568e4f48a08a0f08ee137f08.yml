@@ -1,7 +1,7 @@
 _id: req_f43fcd5f568e4f48a08a0f08ee137f08
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652806059879
+modified: 1654002538454
 created: 1651478520307
 url: "{{ _.base_url }}/api/remove"
 name: Delete Item
@@ -49,8 +49,8 @@ body:
     	"items": [
     		{
     			"force_delete": false,
-    			"type": "image",
-    			"id": "03a76121-369e-4473-9baf-1e4225823ed1"
+    			"type": "folder",
+    			"id": "abdd3503-a410-4e34-b5b6-efa3a8ca177b"
     		}
     	]
     }

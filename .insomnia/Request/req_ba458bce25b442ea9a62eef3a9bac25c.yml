@@ -1,9 +1,9 @@
 _id: req_ba458bce25b442ea9a62eef3a9bac25c
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1652806109317
+modified: 1654002554655
 created: 1651473153213
-url: "{{ _.base_url }}/api/user/tokens/1"
+url: "{{ _.base_url }}/api/user/tokens/{token_id}"
 name: Delete
 description: |-
   Delete user authentication token.

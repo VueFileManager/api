@@ -1,7 +1,7 @@
 _id: req_056e0ee7409a4a0b8874c88b0dcb1d03
 type: Request
 parentId: fld_af48ace5c9014c87945e6550bacf5697
-modified: 1652806081389
+modified: 1654002544623
 created: 1651470986498
 url: "{{ _.base_url }}/api/notifications"
 name: Delete All
@@ -16,7 +16,11 @@ description: |-
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_f5b5dba2794641ea8a981a2045bce06a
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

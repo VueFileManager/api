@@ -1,7 +1,7 @@
 _id: req_d7fc775a915c4ff0b1d16f16eaabe8e4
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652805340901
+modified: 1654002464211
 created: 1652430081580
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/move"
 name: Move Item
@@ -15,8 +15,6 @@ description: >-
 
   Accept: application/json
 
-  Authorization: Bearer
-
   ```
 
   # URL Parameters
@@ -27,15 +25,14 @@ description: >-
 
   # Payload
 
+  ## to_id `uuid`
+
+  The id of the parent folder, there the items move. If null, then the items will be moved into the home location
+
 
   ## items `array` `required`
 
   The name of the new folder
-
-
-  ## items.*.force_delete `boolean` `required`
-
-  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be softly deleted. 
 
 
   ## items.*.type `string` `required`
@@ -51,11 +48,11 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"to_id": null,
+    	"to_id": "c301a4a1-fcab-4726-9bfa-322fe99f0370",
     	"items": [
     		{
     			"type": "file",
-    			"id": "{file_id}"
+    			"id": "5dc91bf2-c859-44fb-87b7-5813a894623d"
     		}
     	]
     }
@@ -68,9 +65,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947280
 isPrivate: false
 settingStoreCookies: true

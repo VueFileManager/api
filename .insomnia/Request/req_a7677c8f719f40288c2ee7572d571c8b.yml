@@ -1,9 +1,9 @@
 _id: req_a7677c8f719f40288c2ee7572d571c8b
 type: Request
-parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652805170633
+parentId: fld_cbca86fa8b4f41189a36719831403788
+modified: 1653983870105
 created: 1652362607061
-url: "{{ _.base_url }}/api/file-request/b7c6e705-6166-4db8-a5bb-922ec588f998"
+url: "{{ _.base_url }}/api/file-request/{file_request_id}"
 name: Mark As Filled
 description: >-
   Mark file request as filled. This close the door for uploading and send the
@@ -30,10 +30,8 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
-metaSortKey: -1651493328013.5
+authentication: {}
+metaSortKey: -1651504340892
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

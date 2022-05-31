@@ -1,16 +1,16 @@
 _id: req_b6bd9fa9126b4cefa74b63bf39246c3d
 type: Request
-parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652805692706
+parentId: fld_ae9be34e05c143c9b73f0de89e01a697
+modified: 1654002505383
 created: 1651481239937
-url: "{{ _.base_url }}/api/share/vuEakfxlfrs7D5mq"
+url: "{{ _.base_url }}/api/share/{token}"
 name: Update Sharing
 description: >-
   Share publicly file or folder
 
   ```
 
-  POST /api/share/{token}
+  PATCH /api/share/{token}
 
 
   Accept: application/json
@@ -74,7 +74,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651478984944.5
+metaSortKey: -1651479829079
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,7 +1,7 @@
 _id: req_121ae2d642c54493810daee81ec8ab61
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652805992773
+modified: 1654002531793
 created: 1651475420969
 url: "{{ _.base_url }}/api/browse/latest"
 name: Get Recent Uploads
@@ -13,10 +13,36 @@ description: |-
   Accept: application/json
   Authorization: Bearer
   ```
+  # Query Parameters
+
+  ### page `integer`
+  Get the paginated results
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_04b5b3ca0af54c738fde285a514f0690
+    name: page
+    value: "1"
+    description: ""
+  - id: pair_2e8d4ad0fab240fabf1ce8040a2ca478
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_8674e07889554f588d888b3312333530
+    name: direction
+    value: DESC
+    description: ""
+headers:
+  - id: pair_320c5adea8cd4f1c9a5c91bf24b6ab5c
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

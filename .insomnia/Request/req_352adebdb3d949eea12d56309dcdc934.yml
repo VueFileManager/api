@@ -1,9 +1,9 @@
 _id: req_352adebdb3d949eea12d56309dcdc934
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652806057192
+modified: 1654002537451
 created: 1651478726635
-url: "{{ _.base_url }}/api/remove"
+url: "{{ _.base_url }}/api/move"
 name: Move Item
 description: >-
   Move one or many items elsewhere
@@ -22,15 +22,14 @@ description: >-
 
   # Payload
 
+  ## to_id `uuid`
+
+  The id of the parent folder, there the items move. If null, then the items will be moved into the home location
+
 
   ## items `array` `required`
 
   The name of the new folder
-
-
-  ## items.*.force_delete `boolean` `required`
-
-  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be softly deleted. 
 
 
   ## items.*.type `string` `required`
@@ -50,7 +49,7 @@ body:
     	"items": [
     		{
     			"type": "file",
-    			"id": "{file_id}"
+    			"id": "2a0fc62d-9049-4957-b5ce-55665dd121c3"
     		}
     	]
     }

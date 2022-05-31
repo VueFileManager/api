@@ -1,9 +1,9 @@
 _id: req_02dd48b5eb174533a8ee7f3d184f1f39
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805537200
+parentId: fld_33f0bd5f79684e8fadb10cfecf126101
+modified: 1653983107645
 created: 1651502858281
-url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
+url: "{{ _.base_url }}/api/teams/invitations/{invitation_id}"
 name: Get Team Folder Invitation
 description: |-
   Get details from team invitation.
@@ -19,7 +19,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_c66dc71daf5243d084cbde8b10df4755
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651475427195.5
 isPrivate: false

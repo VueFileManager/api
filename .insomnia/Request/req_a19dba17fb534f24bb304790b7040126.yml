@@ -1,7 +1,7 @@
 _id: req_a19dba17fb534f24bb304790b7040126
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1652806120039
+modified: 1654002557807
 created: 1651471765335
 url: "{{ _.base_url }}/api/user/settings"
 name: Update Setting
@@ -41,9 +41,10 @@ body:
       name: name
       value: first_name
       description: ""
+      disabled: false
     - id: pair_1de2e112875448e9b0a076b79aaad05b
       name: value
-      value: Jane
+      value: Pepe
       description: ""
       disabled: false
     - id: pair_da99352e2c474768b07c1539fafd3642

@@ -1,7 +1,7 @@
 _id: req_3ae3b67cb5e84e8ca7fbe494ced1c22d
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1652806126122
+modified: 1654002563230
 created: 1651468441519
 url: "{{ _.base_url }}/api/user"
 name: Get Profile
@@ -16,7 +16,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_930dc03465b34b308f31d5e8ad2b9a2e
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

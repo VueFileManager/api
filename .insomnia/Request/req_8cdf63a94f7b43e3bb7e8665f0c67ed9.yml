@@ -1,7 +1,7 @@
 _id: req_8cdf63a94f7b43e3bb7e8665f0c67ed9
 type: Request
 parentId: fld_af48ace5c9014c87945e6550bacf5697
-modified: 1652806082522
+modified: 1654002545873
 created: 1651470828947
 url: "{{ _.base_url }}/api/notifications"
 name: Get all
@@ -16,7 +16,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_00a7c66fc1b047bc91335c18d689a261
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

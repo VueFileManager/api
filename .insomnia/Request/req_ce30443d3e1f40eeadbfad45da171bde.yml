@@ -1,9 +1,9 @@
 _id: req_ce30443d3e1f40eeadbfad45da171bde
 type: Request
-parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652805160405
+parentId: fld_cbca86fa8b4f41189a36719831403788
+modified: 1653982976434
 created: 1651504533271
-url: "{{ _.base_url }}/api/file-request/d63075b0-2975-4a26-82d0-82472db9225d"
+url: "{{ _.base_url }}/api/file-request/{file_request_id}"
 name: Get File Request Detail
 description: |-
   Get details from upload request.
@@ -25,7 +25,7 @@ headers:
     value: application/json
     description: ""
 authentication: {}
-metaSortKey: -1651493328063.5
+metaSortKey: -1651504340942
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

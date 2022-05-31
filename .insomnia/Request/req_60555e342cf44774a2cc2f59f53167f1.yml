@@ -1,7 +1,7 @@
 _id: req_60555e342cf44774a2cc2f59f53167f1
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652805987954
+modified: 1654002530137
 created: 1651475920819
 url: "{{ _.base_url }}/api/browse/navigation"
 name: Get Navigation Tree
@@ -13,10 +13,29 @@ description: |-
   Accept: application/json
   Authorization: Bearer
   ```
+  # Query Parameters
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_8e8605d4f72e48b1b809d89850b84d10
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_19f3a6f083984abab1d9c3a88890d84d
+    name: direction
+    value: DESC
+    description: ""
+headers:
+  - id: pair_596ff6f148584e6a9214d1cd49e9a758
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

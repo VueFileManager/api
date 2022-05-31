@@ -1,7 +1,7 @@
 _id: req_8119e12df58b47d1ac65f46c1ccd7836
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1652806125432
+modified: 1654002562131
 created: 1651471472424
 url: "{{ _.base_url }}/api/user/storage"
 name: Get Storage Detail
@@ -16,7 +16,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_5204dd9fe5374a25b81923937529dbe7
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

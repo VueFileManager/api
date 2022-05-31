@@ -1,9 +1,9 @@
 _id: req_54adcf16f2da4c90a49cadde3b735156
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805407798
+parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
+modified: 1654002495685
 created: 1651502268959
-url: "{{ _.base_url }}/api/teams/folders/f2579422-8204-4b0f-812f-59f051f0a43a/leave"
+url: "{{ _.base_url }}/api/teams/folders/{folder_id}/leave"
 name: Leave Team Folder
 description: |-
   Leave team folder as a team member.
@@ -20,11 +20,15 @@ description: |-
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_ade2b669c7f34950b08624464b878ea7
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651475110639.4062
+metaSortKey: -1651475427045.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,9 +1,9 @@
 _id: req_c86cb96e87d9483ea75b804973a2d5f4
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1652805915029
+modified: 1653983463259
 created: 1652434975419
-url: "{{ _.base_url }}/api/sharing/create-folder/H7wDFUPPwMCmlDSJ"
+url: "{{ _.base_url }}/api/sharing/create-folder/{token}"
 name: Create Folder
 description: >-
   Create new folder for the private files
@@ -34,7 +34,7 @@ description: >-
 
   ## parent_id `uuid`
 
-  The id of the parent folder, if not set, then the folder will be created in the home directory
+  The id of the parent folder, if not set, then the folder will be created in the home directory of the shared folder
 method: POST
 body:
   mimeType: multipart/form-data

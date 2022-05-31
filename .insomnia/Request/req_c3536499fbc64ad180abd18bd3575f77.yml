@@ -1,9 +1,9 @@
 _id: req_c3536499fbc64ad180abd18bd3575f77
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1652805822795
+modified: 1653988704760
 created: 1652435001656
-url: "{{ _.base_url }}/api/sharing/upload/Ukj4IwzCpVMIIseM"
+url: "{{ _.base_url }}/api/sharing/upload/{token}"
 name: File Upload
 description: >-
   Simple file upload
@@ -87,9 +87,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651476388288.1562
 isPrivate: false
 settingStoreCookies: true

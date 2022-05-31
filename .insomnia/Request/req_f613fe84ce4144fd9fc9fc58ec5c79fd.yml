@@ -1,7 +1,7 @@
 _id: req_f613fe84ce4144fd9fc9fc58ec5c79fd
 type: Request
 parentId: fld_ca563c84c7ef4331a5223acf3d8f571f
-modified: 1652806002053
+modified: 1654002532781
 created: 1651475089539
 url: "{{ _.base_url }}/api/browse/folders/all"
 name: Get My Files
@@ -23,10 +23,37 @@ description: |-
   ## URL Parameters
 
   #### folder_id `string`
+
+  # Query Parameters
+
+  ### page `integer`
+  Get the paginated results
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_183351089acc4cae98753e753d0b974b
+    name: page
+    value: "1"
+    description: ""
+  - id: pair_138c92ba12d14a4d8b6021647ae73224
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_c86c710243424e01a2a7bd34891641bb
+    name: direction
+    value: DESC
+    description: ""
+headers:
+  - id: pair_f11d7f3127774fdb9e168dac964cc585
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

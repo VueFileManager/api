@@ -1,9 +1,9 @@
 _id: req_3fd2937911dd43e098e77bcc2e2057b3
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805530069
+parentId: fld_33f0bd5f79684e8fadb10cfecf126101
+modified: 1653983095707
 created: 1651502985860
-url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
+url: "{{ _.base_url }}/api/teams/invitations/{invitation_id}"
 name: Accept Team Folder Invitation
 description: |-
   Accept team folder invitation.
@@ -20,9 +20,13 @@ description: |-
 method: PATCH
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_ea74d564882348a9b709a9e91e1e00cc
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
-metaSortKey: -1651475427170.5
+metaSortKey: -1651475427145.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

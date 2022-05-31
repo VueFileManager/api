@@ -1,9 +1,9 @@
 _id: req_73807dad962349a5993389c79627faee
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805434954
+parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
+modified: 1654002497197
 created: 1651501953360
-url: "{{ _.base_url }}/api/teams/folders/e02b38c9-8806-4907-b793-20331e5b4dd3"
+url: "{{ _.base_url }}/api/teams/folders/{folder_id}"
 name: Update Team Folder
 description: >-
   It update team folder members or invite new members into it.
@@ -70,6 +70,11 @@ body:
     			"email": "jane@doe.com",
     			"permission": "can-view",
     			"type": "invitation"
+    		},
+    		{
+    			"email": "pepe@doe.com",
+    			"permission": "can-view",
+    			"type": "invitation"
     		}
     	],
     	"members": [
@@ -91,7 +96,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651475152840.2188
+metaSortKey: -1651475427145.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

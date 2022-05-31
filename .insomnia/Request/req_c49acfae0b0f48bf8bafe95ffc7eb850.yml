@@ -1,9 +1,9 @@
 _id: req_c49acfae0b0f48bf8bafe95ffc7eb850
 type: Request
 parentId: fld_bfc5036c145448a8a7e93f5bd26c9fd5
-modified: 1652805849902
+modified: 1653984740669
 created: 1652434990253
-url: "{{ _.base_url }}/api/sharing/navigation/Ukj4IwzCpVMIIseM"
+url: "{{ _.base_url }}/api/sharing/navigation/{token}"
 name: Get Navigation Tree
 description: |-
   Get folder navigation hierarchy of private folders
@@ -16,17 +16,31 @@ description: |-
   # URL Parameters
 
   #### token `string`
+
+  # Query Parameters
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
+parameters:
+  - id: pair_3999f52045ee46b4b193d05a1858a47d
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_638e82f26b96491bb1c4bb1a6b9d2ffe
+    name: direction
+    value: DESC
+    description: ""
 headers:
   - id: pair_c9fcf2319f144abb8e44fd859c0187ad
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651474759297.3906
 isPrivate: false
 settingStoreCookies: true

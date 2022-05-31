@@ -1,9 +1,9 @@
 _id: req_a4c76355e11243e5a341602c215ba984
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1652805833148
+modified: 1653983811469
 created: 1652435001651
-url: "{{ _.base_url }}/api/sharing/upload/chunks/Ukj4IwzCpVMIIseM"
+url: "{{ _.base_url }}/api/sharing/upload/chunks/{token}"
 name: File Chunks Upload
 description: >-
   If you want to upload big files, sometimes you have to cut the files into many
@@ -99,9 +99,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651476388338.1562
 isPrivate: false
 settingStoreCookies: true

@@ -1,9 +1,9 @@
 _id: req_2934678c65e84a4682253ade882f1c8c
 type: Request
-parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652805667432
+parentId: fld_ae9be34e05c143c9b73f0de89e01a697
+modified: 1654002503464
 created: 1651481790564
-url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/email"
+url: "{{ _.base_url }}/api/share/{token}/email"
 name: Send Link on Email
 description: |-
   Send share link to multiple emails
@@ -42,7 +42,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651478351806.125
+metaSortKey: -1651479828979
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

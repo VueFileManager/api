@@ -1,14 +1,14 @@
 _id: req_4186a20f9ad04da6a9046309b7c6c9c7
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1652806068822
+modified: 1654002539336
 created: 1651477212728
 url: "{{ _.base_url }}/api/rename/{item_id}"
 name: Rename Item
 description: |-
   Create new folder for the private files
   ```
-  POST /api/rename/{item_id}
+  PATCH /api/rename/{item_id}
 
   Accept: application/json
   Authorization: Bearer
@@ -31,7 +31,7 @@ body:
   params:
     - id: pair_645ecde3ddb34796870e60e6949bcd33
       name: name
-      value: New name
+      value: New Folder
       description: ""
       disabled: false
     - id: pair_ad69b657c066468cb8f4505d7b5fbecf

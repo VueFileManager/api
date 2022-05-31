@@ -1,7 +1,7 @@
 _id: req_3235249673bd4e15a4ae0bd391c74370
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1652359511220
+modified: 1653987485320
 created: 1651474857302
 url: "{{ _.base_url }}/api/password/reset"
 name: Reset Password
@@ -32,12 +32,14 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: howdy@hi5ve.digital
+      value: peterpapp@makingcg.com
       description: ""
     - id: pair_c38e894441464226915393774d4a1ab2
       name: token
-      value: 3D2182a361f3b4b43467197d167bede5072df496b8647f483fdf1ed19549beb116
+      value: 3D4f2f5a4e7a3a8dc1e90180fd87f2cd1e0e63940039b86e149cb4d3a041bb9f40
       description: ""
+      type: text
+      multiline: false
     - id: pair_8d68c1fa4ac141fda6de277d8b9af2c5
       name: password
       value: vuefilemanager

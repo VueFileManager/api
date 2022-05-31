@@ -1,9 +1,9 @@
 _id: req_d8e077fffd2e44759a24596966f1010f
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805419898
+parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
+modified: 1654002496520
 created: 1651501803661
-url: "{{ _.base_url }}/api/teams/folders/7844870e-c1f4-45e9-9def-eddf640714a3"
+url: "{{ _.base_url }}/api/teams/folders/{folder_id}"
 name: Dissolve Team
 description: >-
   Dissolve team folder and convert it back to the private files with all content
@@ -28,11 +28,15 @@ description: >-
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_48afcac33d1642af970879227a9d67ce
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651475131739.8125
+metaSortKey: -1651475427095.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

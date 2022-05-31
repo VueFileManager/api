@@ -1,9 +1,9 @@
 _id: req_cef560f6fa564d38900331a82f7d1f25
 type: Request
-parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652805678117
+parentId: fld_ae9be34e05c143c9b73f0de89e01a697
+modified: 1654002504139
 created: 1651481730039
-url: "{{ _.base_url }}/api/share/OBZh5O6kpzNWOvjF/qr"
+url: "{{ _.base_url }}/api/share/{token}/qr"
 name: Get QR Code
 description: |-
   Get QR code with the current url of the shared item
@@ -16,19 +16,18 @@ description: |-
   # URL Parameters
 
   #### token `string`
-
-  # Arguments
-
-  ## token `string` `required`
-  The token of the share record
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_449cca7b832047549fcf0288f443fc12
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651478562852.25
+metaSortKey: -1651479829029
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

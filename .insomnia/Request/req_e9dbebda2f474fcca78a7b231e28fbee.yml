@@ -1,7 +1,7 @@
 _id: req_e9dbebda2f474fcca78a7b231e28fbee
 type: Request
 parentId: fld_12528324aa6b4a0bbef243ac146e65ad
-modified: 1652431720689
+modified: 1653551272598
 created: 1651482315135
 url: "{{ _.base_url }}/api/ping"
 name: Ping
@@ -15,7 +15,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_465fac579ac64362b6c86477b9390da6
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651482315135
 isPrivate: false

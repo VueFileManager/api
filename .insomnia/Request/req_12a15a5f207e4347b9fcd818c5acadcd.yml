@@ -1,7 +1,7 @@
 _id: req_12a15a5f207e4347b9fcd818c5acadcd
 type: Request
 parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
-modified: 1652805953239
+modified: 1654002527535
 created: 1651479722575
 url: "{{ _.base_url }}/api/trash/dump"
 name: Dump Trash
@@ -16,7 +16,11 @@ description: |-
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_417b92e24d374482820681fdb29bf4c5
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"

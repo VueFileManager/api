@@ -1,7 +1,7 @@
 _id: req_4a0d335ad1f7471a80e796cb8aa3f96f
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1652805890470
+modified: 1654002520832
 created: 1652434975425
 url: "{{ _.base_url }}/api/sharing/remove/{token}"
 name: Delete Item
@@ -29,7 +29,7 @@ description: >-
 
   ## items `array` `required`
 
-  The name of the new folder
+  The array of the items to remove.
 
 
   ## items.*.force_delete `boolean` `required`
@@ -54,7 +54,7 @@ body:
     		{
     			"force_delete": false,
     			"type": "image",
-    			"id": "03a76121-369e-4473-9baf-1e4225823ed1"
+    			"id": "43a2b0d1-ea55-47f2-b7a5-92e5aec4329c"
     		}
     	]
     }
@@ -67,9 +67,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947330
 isPrivate: false
 settingStoreCookies: true

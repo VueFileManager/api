@@ -1,9 +1,9 @@
 _id: req_216a57c1056249c4b893087998ad6d3a
 type: Request
 parentId: fld_0b2568e023e444a19fa0bfaf48765649
-modified: 1652805188461
+modified: 1653984003472
 created: 1652428375695
-url: "{{ _.base_url }}/api/file-request/badd4c24-2b54-46b4-acaa-db8be0028060/upload"
+url: "{{ _.base_url }}/api/file-request/{file_request_id}/upload"
 name: File Upload
 description: >-
   Simple file upload
@@ -14,8 +14,6 @@ description: >-
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 
@@ -89,9 +87,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651476388288.1562
 isPrivate: false
 settingStoreCookies: true

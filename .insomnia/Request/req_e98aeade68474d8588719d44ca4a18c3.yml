@@ -1,17 +1,16 @@
 _id: req_e98aeade68474d8588719d44ca4a18c3
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652805377370
+modified: 1653988970741
 created: 1652430049832
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/rename/{item_id}"
 name: Rename Item
 description: |-
   Create new folder for the private files
   ```
-  POST /api/file-request/{file_request_id}/rename/{item_id}
+  PATCH /api/file-request/{file_request_id}/rename/{item_id}
 
   Accept: application/json
-  Authorization: Bearer
   ```
   # URL Parameters
 
@@ -52,9 +51,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947380
 isPrivate: false
 settingStoreCookies: true

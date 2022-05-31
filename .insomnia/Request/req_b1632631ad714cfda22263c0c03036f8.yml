@@ -1,31 +1,45 @@
 _id: req_b1632631ad714cfda22263c0c03036f8
 type: Request
-parentId: fld_8e31cfc5b43341e3bdceef52e23ce6b6
-modified: 1652805174171
+parentId: fld_cbca86fa8b4f41189a36719831403788
+modified: 1654002469155
 created: 1651504340992
 url: "{{ _.base_url }}/api/file-request"
 name: Create File Request
-description: |-
+description: >-
   Create new file request.
+
   ```
+
   POST /api/file-request
 
+
   Accept: application/json
+
   Authorization: Bearer
+
   ```
+
 
   # Payload
 
+
   ## email `string`
+
   The email address to send upload request link via email. 
 
+
   ## notes `string`
+
   The notes for the upload request recipient.
 
+
   ## folder_id `string`
-  The id of the parent folder under which upload request folder will be created.
+
+  The id of the parent folder under which upload request folder will be created. If not set, the folder with upladed files will be created in home directory.
+
 
   ## name `string`
+
   The name of folder which will be created after upload request will be filled.
 method: POST
 body:
@@ -43,7 +57,7 @@ body:
       disabled: false
     - id: pair_03b08ba1419242fcae33e2636ac38451
       name: folder_id
-      value: 03a76121-369e-4473-9baf-1e4225823ed1
+      value: af609591-d566-49d6-8884-252053fd8db2
       description: ""
       disabled: false
     - id: pair_05509fdec01142f48c3acb9fba77c347

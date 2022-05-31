@@ -1,13 +1,19 @@
 _id: req_ebd43e23db8148bea10403f6e1b90cde
 type: Request
 parentId: fld_bfc5036c145448a8a7e93f5bd26c9fd5
-modified: 1652805868324
+modified: 1653984726914
 created: 1652434990256
-url: "{{ _.base_url
-  }}/api/sharing/folders/3691e3e4-c965-4957-9bd1-0f2acbb939db/Ukj4IwzCpVMIIseM"
+url: "{{ _.base_url }}/api/sharing/folders/all/{token}"
 name: Browse Files
 description: |-
-  Get content of single file request folder
+  Get all content of publicly shared folder
+  ```
+  GET /api/sharing/folders/all/{token}
+
+  Accept: application/json
+  ```
+
+  Get content of single folder within shared folder
   ```
   GET /api/sharing/folders/{folder_id}/{token}
 
@@ -18,17 +24,38 @@ description: |-
 
   #### folder_id `string`
   #### token `string`
+
+  # Query Parameters
+
+  ### page `integer`
+  Get the paginated results
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
+parameters:
+  - id: pair_1304c7a6b0f14db89ee8c1db0640150a
+    name: page
+    value: "1"
+    description: ""
+  - id: pair_7329f7c56664479280fd263e5bea31df
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_dddc1fd438bc451f93912ccb81ed6934
+    name: direction
+    value: DESC
+    description: ""
 headers:
   - id: pair_96ee13d609d14a9292c6ddb3d29aa3dc
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1651474759347.3906
 isPrivate: false
 settingStoreCookies: true

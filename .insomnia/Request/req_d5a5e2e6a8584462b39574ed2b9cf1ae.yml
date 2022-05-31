@@ -1,7 +1,7 @@
 _id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1652359500211
+modified: 1653901517162
 created: 1651474743056
 url: "{{ _.base_url }}/api/password/recover"
 name: Send recovery email
@@ -23,7 +23,7 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: howdy@hi5ve.digital
+      value: peterpapp@makingcg.com
       description: ""
 parameters: []
 headers:

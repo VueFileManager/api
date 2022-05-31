@@ -1,14 +1,14 @@
 _id: req_5c150246cb3245e0ab9cee1759f9cae7
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1652805907282
+modified: 1653988436235
 created: 1652434975422
-url: "{{ _.base_url }}/api/sharing/rename/{token}"
+url: "{{ _.base_url }}/api/sharing/rename/{item_id}/{token}"
 name: Rename Item
 description: |-
   Create new folder for the private files
   ```
-  POST /api/sharing/rename/{token}
+  PATCH /api/sharing/rename/{item_id}/{token}
 
   Accept: application/json
   ```
@@ -52,9 +52,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947380
 isPrivate: false
 settingStoreCookies: true

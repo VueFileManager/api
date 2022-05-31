@@ -1,9 +1,9 @@
 _id: req_1f75c9779dd1457c9512f6edf180cba3
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805505702
+parentId: fld_33f0bd5f79684e8fadb10cfecf126101
+modified: 1653983057417
 created: 1651503088072
-url: "{{ _.base_url }}/api/teams/invitations/11ef2b3f-a0bb-4b09-8707-c8e3419eabea"
+url: "{{ _.base_url }}/api/teams/invitations/{invitation_id}"
 name: Decline Team Folder Invitation
 description: |-
   Decline team folder invitation.
@@ -19,9 +19,13 @@ description: |-
 method: DELETE
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_8f9c32caf6474b729cb046b9583be7f8
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
-metaSortKey: -1651475427158
+metaSortKey: -1651475427095.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

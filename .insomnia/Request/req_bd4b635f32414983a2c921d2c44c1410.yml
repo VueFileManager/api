@@ -1,12 +1,12 @@
 _id: req_bd4b635f32414983a2c921d2c44c1410
 type: Request
 parentId: fld_12528324aa6b4a0bbef243ac146e65ad
-modified: 1652360034081
+modified: 1653983703496
 created: 1652278961916
 url: "{{ _.base_url }}/api/config"
 name: Config
 description: |-
-  Ping the API
+  Get the app config of the app.
   ```
   POST /api/ping
 
@@ -15,7 +15,11 @@ description: |-
 method: GET
 body: {}
 parameters: []
-headers: []
+headers:
+  - id: pair_8a8ba8379c754de2bbb83ad349c94adb
+    name: Accept
+    value: application/json
+    description: ""
 authentication: {}
 metaSortKey: -1651482315085
 isPrivate: false

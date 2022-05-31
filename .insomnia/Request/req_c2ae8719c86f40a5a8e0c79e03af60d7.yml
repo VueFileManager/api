@@ -1,16 +1,16 @@
 _id: req_c2ae8719c86f40a5a8e0c79e03af60d7
 type: Request
-parentId: fld_fcaa42ada0bf474abba9a6d281b9a19a
-modified: 1652805787494
+parentId: fld_ae9be34e05c143c9b73f0de89e01a697
+modified: 1654002506558
 created: 1651479829129
-url: "{{ _.base_url }}/api/share/dae39525-b7ed-4e02-aacf-54ebe701ca79"
+url: "{{ _.base_url }}/api/share"
 name: Share Item
 description: >-
   Share publicly file or folder
 
   ```
 
-  POST /api/share/{item_id}
+  POST /api/share
 
 
   Accept: application/json
@@ -19,13 +19,18 @@ description: >-
 
   ```
 
-  # URL Parameters
-
-
-  #### item_id `string`
-
 
   # Payload
+
+
+  ## id `uuid` `required`
+
+  The id of the item you want to share
+
+
+  ## type `string` `required`
+
+  The type of the renaming item. Allowed types are `folder` or `file`
 
 
   ## isPassword `boolean`
@@ -61,6 +66,7 @@ body:
   mimeType: application/json
   text: |-
     {
+    	"id": "20c9d4d8-de8c-4d87-ba50-ae67bec15e78",
     	"isPassword": true,
     	"password": "secret_password",
     	"type": "folder",

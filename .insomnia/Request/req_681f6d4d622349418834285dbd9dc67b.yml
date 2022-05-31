@@ -1,7 +1,7 @@
 _id: req_681f6d4d622349418834285dbd9dc67b
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1652805351464
+modified: 1654002464814
 created: 1652430065534
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/remove"
 name: Delete Item
@@ -14,8 +14,6 @@ description: >-
 
 
   Accept: application/json
-
-  Authorization: Bearer
 
   ```
 
@@ -55,7 +53,7 @@ body:
     		{
     			"force_delete": false,
     			"type": "image",
-    			"id": "03a76121-369e-4473-9baf-1e4225823ed1"
+    			"id": "3e11d22f-3018-42ad-b04a-850d7b1c9671"
     		}
     	]
     }
@@ -68,9 +66,7 @@ headers:
     name: Accept
     value: application/json
     description: ""
-authentication:
-  type: bearer
-  token: "{{ _.token }}"
+authentication: {}
 metaSortKey: -1652429947330
 isPrivate: false
 settingStoreCookies: true

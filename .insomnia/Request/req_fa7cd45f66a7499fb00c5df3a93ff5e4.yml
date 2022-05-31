@@ -1,7 +1,7 @@
 _id: req_fa7cd45f66a7499fb00c5df3a93ff5e4
 type: Request
-parentId: fld_52b1b32f8e344a73b4994051681dccdf
-modified: 1652805455058
+parentId: fld_dcd850591f044a1a9df7e2a1ad30f457
+modified: 1654002488175
 created: 1651475837385
 url: "{{ _.base_url }}/api/teams/shared-with-me/all"
 name: Get Shared With Me
@@ -23,14 +23,41 @@ description: |-
   ## URL Parameters
 
   #### folder_id `string`
+
+  # Query Parameters
+
+  ### page `integer`
+  Get the paginated results
+
+  ### sort `string`
+  Define default sorting. Available attributes are `created_at` and `name`
+
+  ### direction `string`
+  Define default sorting. Available attributes are `DESC` and `ASC`
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_6438932c5530402c8c1476e286a14258
+    name: page
+    value: "1"
+    description: ""
+  - id: pair_d2aca18f525543449e058a0133e9ef8b
+    name: sort
+    value: created_at
+    description: ""
+  - id: pair_88469a5866f64cb0a4394a3e8e38734c
+    name: direction
+    value: DESC
+    description: ""
+headers:
+  - id: pair_a315d94e9bbd4a1793cd003a2b6dd0ad
+    name: Accept
+    value: application/json
+    description: ""
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1651475258342.25
+metaSortKey: -1651475427095.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
