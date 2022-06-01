@@ -1,7 +1,7 @@
 _id: req_a4c76355e11243e5a341602c215ba984
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1653983811469
+modified: 1654097533188
 created: 1652435001651
 url: "{{ _.base_url }}/api/sharing/upload/chunks/{token}"
 name: File Chunks Upload
@@ -64,12 +64,12 @@ body:
       value: vuefilemanager-hero
       description: ""
       disabled: false
-    - id: pair_2b50c95a59b54204bdaf96790e1ea659
+    - id: pair_29c0dd66d97d470e80e4ff0169eaa0ce
       name: chunk
       value: ""
       description: ""
       type: file
-      fileName: /Users/carodej/Desktop/VueFileManager/vuefilemanager-screenshot-light.png
+      multiline: null
     - id: pair_6400247d259a45719408c0246f26b7d8
       name: extension
       value: jpg

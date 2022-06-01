@@ -1,12 +1,12 @@
 _id: req_cef560f6fa564d38900331a82f7d1f25
 type: Request
 parentId: fld_ae9be34e05c143c9b73f0de89e01a697
-modified: 1654002504139
+modified: 1654097605917
 created: 1651481730039
 url: "{{ _.base_url }}/api/share/{token}/qr"
 name: Get QR Code
 description: |-
-  Get QR code with the current url of the shared item
+  Get QR code with the current url of the shared file or folder.
   ```
   GET /api/share/{token}/qr
 

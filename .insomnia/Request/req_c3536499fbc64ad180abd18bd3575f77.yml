@@ -1,12 +1,12 @@
 _id: req_c3536499fbc64ad180abd18bd3575f77
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1653988704760
+modified: 1654097563455
 created: 1652435001656
 url: "{{ _.base_url }}/api/sharing/upload/{token}"
 name: File Upload
 description: >-
-  Simple file upload
+  Simple file upload.
 
   ```
 
@@ -57,12 +57,12 @@ body:
       value: vuefilemanager-hero
       description: ""
       disabled: false
-    - id: pair_2b50c95a59b54204bdaf96790e1ea659
+    - id: pair_d6cf804df1364dc190c7a0133d8bfd04
       name: file
       value: ""
       description: ""
       type: file
-      fileName: /Users/carodej/Desktop/VueFileManager/vuefilemanager-screenshot-light.png
+      multiline: null
     - id: pair_6400247d259a45719408c0246f26b7d8
       name: extension
       value: jpg

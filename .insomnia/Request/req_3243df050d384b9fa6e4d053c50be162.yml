@@ -1,12 +1,12 @@
 _id: req_3243df050d384b9fa6e4d053c50be162
 type: Request
 parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
-modified: 1654002499099
+modified: 1654097617315
 created: 1651501353496
 url: "{{ _.base_url }}/api/teams/folders"
 name: Create Team Folder
 description: |-
-  It create new team folder and invite new members into it.
+  Create new Team Folder and invite new members into it.
   ```
   POST /api/teams/folders
 

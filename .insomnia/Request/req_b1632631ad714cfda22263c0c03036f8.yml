@@ -1,7 +1,7 @@
 _id: req_b1632631ad714cfda22263c0c03036f8
 type: Request
 parentId: fld_cbca86fa8b4f41189a36719831403788
-modified: 1654002469155
+modified: 1654097664780
 created: 1651504340992
 url: "{{ _.base_url }}/api/file-request"
 name: Create File Request
@@ -52,12 +52,12 @@ body:
       disabled: false
     - id: pair_1cfb64e60a8d429d93631978b47f32c7
       name: notes
-      value: Please send me some files!
+      value: Please send me any files!
       description: ""
       disabled: false
     - id: pair_03b08ba1419242fcae33e2636ac38451
       name: folder_id
-      value: af609591-d566-49d6-8884-252053fd8db2
+      value: ""
       description: ""
       disabled: false
     - id: pair_05509fdec01142f48c3acb9fba77c347

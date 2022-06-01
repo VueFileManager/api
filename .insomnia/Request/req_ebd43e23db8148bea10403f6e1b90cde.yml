@@ -1,12 +1,12 @@
 _id: req_ebd43e23db8148bea10403f6e1b90cde
 type: Request
 parentId: fld_bfc5036c145448a8a7e93f5bd26c9fd5
-modified: 1653984726914
+modified: 1654096092136
 created: 1652434990256
 url: "{{ _.base_url }}/api/sharing/folders/all/{token}"
 name: Browse Files
 description: |-
-  Get all content of publicly shared folder
+  Get all content of shared folder.
   ```
   GET /api/sharing/folders/all/{token}
 

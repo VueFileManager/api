@@ -1,12 +1,12 @@
 _id: req_bd4b635f32414983a2c921d2c44c1410
 type: Request
 parentId: fld_12528324aa6b4a0bbef243ac146e65ad
-modified: 1653983703496
+modified: 1654095171520
 created: 1652278961916
 url: "{{ _.base_url }}/api/config"
 name: Config
 description: |-
-  Get the app config of the app.
+  Get the config of the app.
   ```
   POST /api/ping
 

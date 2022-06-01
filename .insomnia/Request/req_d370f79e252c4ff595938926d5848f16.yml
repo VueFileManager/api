@@ -1,12 +1,12 @@
 _id: req_d370f79e252c4ff595938926d5848f16
 type: Request
 parentId: fld_ffe856633832466f98b35a5819ffd40b
-modified: 1654002501340
+modified: 1654096288788
 created: 1651476144058
 url: "{{ _.base_url }}/api/search"
 name: Search Users
 description: |
-  Search files & folders
+  Search users.
   ```
   GET /api/search
 

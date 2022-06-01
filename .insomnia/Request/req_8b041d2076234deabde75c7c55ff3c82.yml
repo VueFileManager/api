@@ -1,12 +1,12 @@
 _id: req_8b041d2076234deabde75c7c55ff3c82
 type: Request
 parentId: fld_88dadd6ada9f4132884e63a37590b711
-modified: 1654002555523
+modified: 1654098121190
 created: 1651473040417
 url: "{{ _.base_url }}/api/user/tokens"
 name: Create
 description: |-
-  Generate new authentication token.
+  Generate new bearer authentication token.
   ```
   POST /api/user/tokens
 

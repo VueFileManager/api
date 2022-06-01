@@ -1,12 +1,12 @@
 _id: req_e8493b9d551a40f8ada737c32ab5d345
 type: Request
 parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
-modified: 1654002528927
+modified: 1654097466736
 created: 1651475643480
 url: "{{ _.base_url }}/api/browse/trash/all"
 name: Get Content
 description: |-
-  Get all trash content
+  Get all trash content.
   ```
   GET /api/browse/trash/all
 

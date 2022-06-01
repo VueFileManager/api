@@ -1,12 +1,12 @@
 _id: req_e98aeade68474d8588719d44ca4a18c3
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1653988970741
+modified: 1654096738745
 created: 1652430049832
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/rename/{item_id}"
 name: Rename Item
 description: |-
-  Create new folder for the private files
+  Rename file or folder within File Request.
   ```
   PATCH /api/file-request/{file_request_id}/rename/{item_id}
 

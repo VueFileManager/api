@@ -1,7 +1,7 @@
 _id: req_216a57c1056249c4b893087998ad6d3a
 type: Request
 parentId: fld_0b2568e023e444a19fa0bfaf48765649
-modified: 1653984003472
+modified: 1654097727754
 created: 1652428375695
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/upload"
 name: File Upload
@@ -57,12 +57,12 @@ body:
       value: vuefilemanager-hero
       description: ""
       disabled: false
-    - id: pair_2b50c95a59b54204bdaf96790e1ea659
+    - id: pair_437513d70516476f8f1b06aba42ef140
       name: file
       value: ""
       description: ""
       type: file
-      fileName: /Users/carodej/Desktop/VueFileManager/vuefilemanager-screenshot-light.png
+      multiline: null
     - id: pair_6400247d259a45719408c0246f26b7d8
       name: extension
       value: jpg

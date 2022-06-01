@@ -1,13 +1,13 @@
 _id: req_d8e077fffd2e44759a24596966f1010f
 type: Request
 parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
-modified: 1654002496520
+modified: 1654097638157
 created: 1651501803661
 url: "{{ _.base_url }}/api/teams/folders/{folder_id}"
 name: Dissolve Team
 description: >-
-  Dissolve team folder and convert it back to the private files with all content
-  within.
+  Dissolve Team Folder and convert it back to the user basic folders with all
+  content within.
 
 
   ```

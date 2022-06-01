@@ -1,12 +1,12 @@
 _id: req_344b0919921740d4827db2ab84ee61bd
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1654002558795
+modified: 1654098088250
 created: 1651472183034
 url: "{{ _.base_url }}/api/user/avatar"
 name: Update Avatar
 description: |
-  Update user avatar
+  Update user avatar.
   ```
   POST /api/user/avatar
 
@@ -22,13 +22,12 @@ method: POST
 body:
   mimeType: multipart/form-data
   params:
-    - id: pair_1de2e112875448e9b0a076b79aaad05b
+    - id: pair_4d61f8dbf1f448919c4265a3083192de
       name: avatar
-      value: Jane
+      value: ""
       description: ""
       type: file
-      fileName: /Users/carodej/Desktop/VueFileManager/Demo Files/memes/whaaaaat.jpg
-      disabled: false
+      multiline: null
 parameters: []
 headers:
   - name: Content-Type

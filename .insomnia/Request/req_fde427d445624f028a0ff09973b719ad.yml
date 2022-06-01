@@ -1,12 +1,12 @@
 _id: req_fde427d445624f028a0ff09973b719ad
 type: Request
 parentId: fld_3f3d1deaf9a44c50bb3eb6bcdc3609d6
-modified: 1653987384109
+modified: 1654097907928
 created: 1651473576700
 url: "{{ _.base_url }}/api/user/verify"
-name: Resend Verification Email (Pro)
+name: Resend Verification Mail (Pro)
 description: |
-  Resend verification email
+  Resend mail to verify email account.
   ```
   POST /api/user/verify
 
@@ -16,14 +16,14 @@ description: |
   # Payload
 
   ## email `string` `required`
-  The user email where to send verification email
+  The user email where to send verification mail.
 method: POST
 body:
   mimeType: multipart/form-data
   params:
     - id: pair_b3bfc18f15bb427eadb80bc9c79862da
       name: email
-      value: peterpapp@makingcg.com
+      value: jane@doe.com
       description: ""
       disabled: false
 parameters: []

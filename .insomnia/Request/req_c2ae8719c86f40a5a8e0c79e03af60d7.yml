@@ -1,12 +1,12 @@
 _id: req_c2ae8719c86f40a5a8e0c79e03af60d7
 type: Request
 parentId: fld_ae9be34e05c143c9b73f0de89e01a697
-modified: 1654002506558
+modified: 1654097596679
 created: 1651479829129
 url: "{{ _.base_url }}/api/share"
 name: Share Item
 description: >-
-  Share publicly file or folder
+  Share publicly file or folder.
 
   ```
 
@@ -66,7 +66,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"id": "20c9d4d8-de8c-4d87-ba50-ae67bec15e78",
+    	"id": "{item_id}",
     	"isPassword": true,
     	"password": "secret_password",
     	"type": "folder",

@@ -1,12 +1,12 @@
 _id: req_352adebdb3d949eea12d56309dcdc934
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1654002537451
+modified: 1654099114876
 created: 1651478726635
 url: "{{ _.base_url }}/api/move"
 name: Move Item
 description: >-
-  Move one or many items elsewhere
+  Move one or many files or folders elsewhere
 
   ```
 
@@ -29,7 +29,7 @@ description: >-
 
   ## items `array` `required`
 
-  The name of the new folder
+  The array of the items
 
 
   ## items.*.type `string` `required`
@@ -49,7 +49,7 @@ body:
     	"items": [
     		{
     			"type": "file",
-    			"id": "2a0fc62d-9049-4957-b5ce-55665dd121c3"
+    			"id": "{item_id}"
     		}
     	]
     }

@@ -1,12 +1,12 @@
 _id: req_2f1a6763ba63491d912074b44f2d05a0
 type: Request
 parentId: fld_0b8ad5b494c444378457243bd736f5cb
-modified: 1654002569138
+modified: 1654098009867
 created: 1652345256463
 url: "{{ _.base_url }}/api/logout"
 name: Log Out
 description: |-
-  Revoke active bearer token from authorization header
+  Revoke active bearer token from authorization header.
   ```
   POST /api/logout
 

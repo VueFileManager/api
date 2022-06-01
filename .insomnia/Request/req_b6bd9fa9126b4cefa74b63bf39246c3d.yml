@@ -1,12 +1,12 @@
 _id: req_b6bd9fa9126b4cefa74b63bf39246c3d
 type: Request
 parentId: fld_ae9be34e05c143c9b73f0de89e01a697
-modified: 1654002505383
+modified: 1654097601528
 created: 1651481239937
 url: "{{ _.base_url }}/api/share/{token}"
 name: Update Sharing
 description: >-
-  Share publicly file or folder
+  Update publicly shared file or folder.
 
   ```
 

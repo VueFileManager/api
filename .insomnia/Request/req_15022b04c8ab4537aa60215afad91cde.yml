@@ -1,12 +1,12 @@
 _id: req_15022b04c8ab4537aa60215afad91cde
 type: Request
 parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
-modified: 1654002498468
+modified: 1654097621147
 created: 1651502385431
 url: "{{ _.base_url }}/api/teams/folders/{folder_id}/convert"
 name: Convert Into Team Folder
 description: >-
-  It convert existing private folder to the Team Folder and invite new members
+  It convert existing user folder into the Team Folder and invite new members
   into it.
 
 

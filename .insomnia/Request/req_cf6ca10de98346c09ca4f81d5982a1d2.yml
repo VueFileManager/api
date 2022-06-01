@@ -1,12 +1,12 @@
 _id: req_cf6ca10de98346c09ca4f81d5982a1d2
 type: Request
 parentId: fld_6b95ecc4d25e49fab2428b1c07c8679d
-modified: 1654002553138
+modified: 1654098134748
 created: 1652339190767
 url: "{{ _.base_url }}/api/subscriptions/billing-alert"
 name: Create Alert
 description: |
-  Set the billing alert for certain usage amount in plan currency
+  Set the billing alert for certain usage amount in plan currency.
   ```
   POST /api/subscriptions/billing-alert
 
@@ -24,7 +24,7 @@ body:
   params:
     - id: pair_9cd0c13217ef4a3ea653f92058ee5dee
       name: amount
-      value: "22"
+      value: "20"
       description: ""
 parameters: []
 headers:

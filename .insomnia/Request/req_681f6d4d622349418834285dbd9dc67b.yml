@@ -1,12 +1,12 @@
 _id: req_681f6d4d622349418834285dbd9dc67b
 type: Request
 parentId: fld_3e3c490fa7f64ffdaaaea7dfde1a627e
-modified: 1654002464814
+modified: 1654099168213
 created: 1652430065534
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/remove"
 name: Delete Item
 description: >-
-  Delete one or many items
+  Delete one or many files or folders within File Request.
 
   ```
 
@@ -28,7 +28,7 @@ description: >-
 
   ## items `array` `required`
 
-  The name of the new folder
+  The array of the items
 
 
   ## items.*.force_delete `boolean` `required`
@@ -53,7 +53,7 @@ body:
     		{
     			"force_delete": false,
     			"type": "image",
-    			"id": "3e11d22f-3018-42ad-b04a-850d7b1c9671"
+    			"id": "{item_id}"
     		}
     	]
     }

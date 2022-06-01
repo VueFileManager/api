@@ -1,12 +1,12 @@
 _id: req_e8d428b085e84e6cbafe11016b753c58
 type: Request
 parentId: fld_6ff0ba7c9c674ed3a5cc3a201136a471
-modified: 1654002524588
+modified: 1654097484712
 created: 1651482234282
 url: "{{ _.base_url }}/api/favourites/{folder_id}"
 name: Remove from Favourites
 description: |-
-  Remove folder from your favourite list
+  Remove folder from your list of favourite folders.
   ```
   DELETE /api/favourites/{folder_id}
 

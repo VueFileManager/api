@@ -1,12 +1,12 @@
 _id: req_12a15a5f207e4347b9fcd818c5acadcd
 type: Request
 parentId: fld_c13c11ea5c604c75a36f9af9a67863fe
-modified: 1654002527535
+modified: 1654097470844
 created: 1651479722575
 url: "{{ _.base_url }}/api/trash/dump"
 name: Dump Trash
 description: |-
-  Remove all content from the trash
+  Dump all content from the trash immediately.
   ```
   DELETE /api/trash/dump
 

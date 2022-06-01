@@ -1,12 +1,12 @@
 _id: req_f43fcd5f568e4f48a08a0f08ee137f08
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1654002538454
+modified: 1654099088878
 created: 1651478520307
 url: "{{ _.base_url }}/api/remove"
 name: Delete Item
 description: >-
-  Delete one or many items
+  Delete one or many files or folders.
 
   ```
 
@@ -25,12 +25,12 @@ description: >-
 
   ## items `array` `required`
 
-  The name of the new folder
+  The array of the items
 
 
   ## items.*.force_delete `boolean` `required`
 
-  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be softly deleted. 
+  Determine how to delete the item. If value is set to yes, then the item will be immediately deleted from the database and storage. If false, the item will be deleted softly. 
 
 
   ## items.*.type `string` `required`
@@ -50,7 +50,7 @@ body:
     		{
     			"force_delete": false,
     			"type": "folder",
-    			"id": "abdd3503-a410-4e34-b5b6-efa3a8ca177b"
+    			"id": "{item_id}"
     		}
     	]
     }

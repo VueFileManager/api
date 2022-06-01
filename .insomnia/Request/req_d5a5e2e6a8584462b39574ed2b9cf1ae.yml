@@ -1,12 +1,12 @@
 _id: req_d5a5e2e6a8584462b39574ed2b9cf1ae
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1653901517162
+modified: 1654098046583
 created: 1651474743056
 url: "{{ _.base_url }}/api/password/recover"
-name: Send recovery email
+name: Send Recovery Mail
 description: |
-  Send email to recover password 
+  Send mail to recover password.
   ```
   POST /api/password/recover
 
@@ -23,7 +23,7 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: peterpapp@makingcg.com
+      value: jane@doe.com
       description: ""
 parameters: []
 headers:

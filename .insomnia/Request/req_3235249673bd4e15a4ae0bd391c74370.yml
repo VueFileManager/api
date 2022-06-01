@@ -1,12 +1,12 @@
 _id: req_3235249673bd4e15a4ae0bd391c74370
 type: Request
 parentId: fld_115385e6318e41de9b67d278fa75bd44
-modified: 1653987485320
+modified: 1654097237774
 created: 1651474857302
 url: "{{ _.base_url }}/api/password/reset"
 name: Reset Password
 description: |
-  Update user avatar
+  Reset user password with obtained token from the email.
   ```
   POST /api/password/reset
 
@@ -19,7 +19,7 @@ description: |
   The user email for which password recovery link was generated.
 
   ## token `string` `required`
-  The password reset token received in the url string.
+  The password reset token received in the email.
 
   ## password `string` `required`
   The new user password.
@@ -32,11 +32,11 @@ body:
   params:
     - id: pair_afd4270cddb542e0ae210f54e277e84e
       name: email
-      value: peterpapp@makingcg.com
+      value: jane@doe.com
       description: ""
     - id: pair_c38e894441464226915393774d4a1ab2
       name: token
-      value: 3D4f2f5a4e7a3a8dc1e90180fd87f2cd1e0e63940039b86e149cb4d3a041bb9f40
+      value: "{token}"
       description: ""
       type: text
       multiline: false

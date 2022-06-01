@@ -1,12 +1,12 @@
 _id: req_dcb69732e1c544929f01c228409bd583
 type: Request
 parentId: fld_b63e622064614743b628f68689ec2bde
-modified: 1654002519962
+modified: 1654099191071
 created: 1652434975427
 url: "{{ _.base_url }}/api/sharing/move/{token}"
 name: Move Item
 description: >-
-  Move one or many items elsewhere
+  Move one or many files or folders elsewhere within shared folder.
 
   ```
 
@@ -34,7 +34,7 @@ description: >-
 
   ## items `array` `required`
 
-  The name of the new folder
+  The array of the items
 
 
   ## items.*.type `string` `required`
@@ -54,7 +54,7 @@ body:
     	"items": [
     		{
     			"type": "file",
-    			"id": "2bfa6e55-81f3-4d43-8c22-324479f55aad"
+    			"id": "{item_id}"
     		}
     	]
     }

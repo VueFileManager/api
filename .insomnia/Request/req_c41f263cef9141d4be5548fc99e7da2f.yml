@@ -1,12 +1,12 @@
 _id: req_c41f263cef9141d4be5548fc99e7da2f
 type: Request
 parentId: fld_0b8ad5b494c444378457243bd736f5cb
-modified: 1653901195260
+modified: 1654098001368
 created: 1652342018071
 url: "{{ _.base_url }}/api/login"
 name: Get Bearer Token
 description: |-
-  Authenticate user and obtain bearer token
+  Obtain bearer token which is needed for authentication into the app.
   ```
   POST /api/login
 
@@ -15,7 +15,7 @@ description: |-
   # Payload
 
   ## email `string` `required`
-  The email of the user.
+  The user registered email.
 
   ## password `string` `required`
   The user password.
@@ -25,7 +25,7 @@ body:
   params:
     - id: pair_b1721b53a2db4f1c81e4079c09176dbd
       name: email
-      value: "peterpapp@makingcg.com "
+      value: "howdy@hi5ve.digital "
       description: ""
       disabled: false
     - id: pair_f31d9ab0eb38451e87f5219b75871f99

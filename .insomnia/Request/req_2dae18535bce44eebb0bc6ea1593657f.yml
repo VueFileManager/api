@@ -1,12 +1,12 @@
 _id: req_2dae18535bce44eebb0bc6ea1593657f
 type: Request
 parentId: fld_1252a88cf5964c4d92ef7db221c6be24
-modified: 1654002540387
+modified: 1654099028986
 created: 1651476452391
 url: "{{ _.base_url }}/api/create-folder"
 name: Create Folder
 description: >-
-  Create new folder for the private files
+  Create new folder.
 
   ```
 
@@ -30,7 +30,7 @@ description: >-
 
   ## parent_id `uuid`
 
-  The id of the parent folder, if not set, then the folder will be created in the home directory
+  The id of the parent folder, if id is not set, the folder will be created in the home directory
 method: POST
 body:
   mimeType: multipart/form-data

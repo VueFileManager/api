@@ -1,12 +1,12 @@
 _id: req_fed826eb2cb242b3b47d3e97573a4edb
 type: Request
 parentId: fld_9e03e083f5e9430e945ebd4f662d8fa0
-modified: 1653987319948
+modified: 1654097084683
 created: 1652431225113
 url: "{{ _.base_url }}/api/file-request/{file_request_id}/browse/all"
 name: Browse Files
 description: |-
-  Get all file request folders
+  Get all files and folders within File Request.
   ```
   GET /api/file-request/{file_request_id}/browse/all
 

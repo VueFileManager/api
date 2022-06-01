@@ -1,12 +1,12 @@
 _id: req_c7384cdf68904c248b975921c37482cf
 type: Request
 parentId: fld_dcd850591f044a1a9df7e2a1ad30f457
-modified: 1654002470677
+modified: 1654096518051
 created: 1651502753852
 url: "{{ _.base_url }}/api/teams/folders/{folder_id}/tree"
 name: Get Navigation Tree of Shared With Me Folder
 description: |-
-  Get hierarchy tree of root team folder
+  Get tree hierarchy of the root Team Folder.
   ```
   GET /api/teams/folders/{folder_id}/tree
 

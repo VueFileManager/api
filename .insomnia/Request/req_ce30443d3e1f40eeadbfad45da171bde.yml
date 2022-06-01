@@ -1,12 +1,12 @@
 _id: req_ce30443d3e1f40eeadbfad45da171bde
 type: Request
 parentId: fld_cbca86fa8b4f41189a36719831403788
-modified: 1653982976434
+modified: 1654096604409
 created: 1651504533271
 url: "{{ _.base_url }}/api/file-request/{file_request_id}"
 name: Get File Request Detail
 description: |-
-  Get details from upload request.
+  Get details from file request.
 
   ```
   GET /api/file-request/{file_request_id}

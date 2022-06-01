@@ -1,12 +1,12 @@
 _id: req_a19dba17fb534f24bb304790b7040126
 type: Request
 parentId: fld_c39aeb13e0304378a778b49e3d049682
-modified: 1654002557807
+modified: 1654098105767
 created: 1651471765335
 url: "{{ _.base_url }}/api/user/settings"
 name: Update Setting
 description: |
-  Update user settings
+  Update user settings.
   ```
   POST /api/user/settings
 
@@ -17,7 +17,7 @@ description: |
   # Payload
 
   ## name `string` `required`
-  Name of the attribude you are going to update. Allowed attributes are:
+  Name of the attribute you are going to update. Allowed attributes are:
   - color (HEX format)
   - first_name
   - last_name
@@ -44,7 +44,7 @@ body:
       disabled: false
     - id: pair_1de2e112875448e9b0a076b79aaad05b
       name: value
-      value: Pepe
+      value: Jane
       description: ""
       disabled: false
     - id: pair_da99352e2c474768b07c1539fafd3642

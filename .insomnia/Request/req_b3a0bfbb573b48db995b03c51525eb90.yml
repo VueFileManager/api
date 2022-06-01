@@ -1,12 +1,12 @@
 _id: req_b3a0bfbb573b48db995b03c51525eb90
 type: Request
 parentId: fld_1be81e5c8e4d417d894db8f455ddc734
-modified: 1654002542911
+modified: 1654098179713
 created: 1651476781341
 url: "{{ _.base_url }}/api/upload/remote"
 name: Remote Upload
 description: >-
-  Upload remotely files from URL
+  Upload remotely files from URL.
 
   ```
 
@@ -24,13 +24,13 @@ description: >-
 
   ## parent_id `uuid`
 
-  The id of the parent folder. If it's not set, then the files will be uploaded into home location
+  The id of the parent folder. If the id is not set, the files will be uploaded into home location
 
 
 
   ## urls `array` `required`
 
-  The array of valid file urls to download remotely
+  The array of valid direct file urls to download remotely
 method: POST
 body:
   mimeType: application/json

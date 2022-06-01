@@ -1,12 +1,12 @@
 _id: req_afdddea447f4497093b6818c273c4d3f
 type: Request
 parentId: fld_0b8ad5b494c444378457243bd736f5cb
-modified: 1653987423765
+modified: 1654097976024
 created: 1651473972850
 url: "{{ _.base_url }}/api/user/check"
 name: Check Account By Email
 description: |-
-  It check if the user exists
+  Check if the user with exact email exists.
   ```
   POST /api/user/check
 
@@ -15,7 +15,7 @@ description: |-
   # Payload
 
   ## email `string` `required`
-  The user email where to check the existence
+  The user registered email to check the account existence.
 method: POST
 body:
   mimeType: multipart/form-data

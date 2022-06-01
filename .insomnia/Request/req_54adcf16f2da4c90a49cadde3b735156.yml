@@ -1,12 +1,12 @@
 _id: req_54adcf16f2da4c90a49cadde3b735156
 type: Request
 parentId: fld_0df06aa963b04fedbe212c2c8feb79e5
-modified: 1654002495685
+modified: 1654097639693
 created: 1651502268959
 url: "{{ _.base_url }}/api/teams/folders/{folder_id}/leave"
 name: Leave Team Folder
 description: |-
-  Leave team folder as a team member.
+  Leave Team Folder as a team member.
 
   ```
   DELETE /api/teams/folders/{folder_id}/leave

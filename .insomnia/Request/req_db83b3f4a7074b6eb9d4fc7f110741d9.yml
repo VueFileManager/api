@@ -1,12 +1,12 @@
 _id: req_db83b3f4a7074b6eb9d4fc7f110741d9
 type: Request
 parentId: fld_dcd850591f044a1a9df7e2a1ad30f457
-modified: 1654002490824
+modified: 1654096479336
 created: 1651475789765
 url: "{{ _.base_url }}/api/teams/folders/all"
 name: Get Team Folders
 description: |-
-  Get all team folders
+  Get all user Team Folders.
   ```
   GET /api/teams/folders/all
 

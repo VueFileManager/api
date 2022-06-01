@@ -1,12 +1,12 @@
 _id: req_77254d006667445bbb05fbf6b107418c
 type: Request
 parentId: fld_ae9be34e05c143c9b73f0de89e01a697
-modified: 1654002502657
+modified: 1654097611879
 created: 1651481099717
 url: "{{ _.base_url }}/api/share/revoke"
 name: Cancel Sharing
 description: |-
-  Delete multiple share records
+  Cancel files or folders sharing.
   ```
   DELETE /api/share/revoke
 

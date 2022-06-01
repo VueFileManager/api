@@ -1,12 +1,12 @@
 _id: req_14d454a5e56c47ef8353d6f26ef2e117
 type: Request
 parentId: fld_808c7c85abbf4714901f68fa481489fa
-modified: 1654002508058
+modified: 1654097565315
 created: 1652435001654
 url: "{{ _.base_url }}/api/sharing/upload/remote/{token}"
 name: Remote Upload
 description: >-
-  Upload remotely files from URL
+  Upload remotely files from URL.
 
   ```
 
